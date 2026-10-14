@@ -1,0 +1,50 @@
+{
+  "claim": "Distribution-matched corrected-PDP neural/classical BER across three modulation/CP cases",
+  "channel": "EVA",
+  "csv": "submission/Integration_VLSI_Journal_2026/origin_data/ber_curves_corrected_pdp_tidy.csv",
+  "csv_sha256": "a9fe361c99ef7f2287449c5360af6dd99ff0fcff0d21c444375d1e3fafc91d80",
+  "verified_json_sources": [
+    {
+      "path": "dccn/results/e14_b1_shortcp_pdpfix_retrain_summary.json",
+      "sha256": "0d0c57360ed15abc051cf5c5bf6f84a5e36b12806254870ac9c9a7d4b3d0824e"
+    },
+    {
+      "path": "dccn/results/classical_b1_shortcp_eva_summary.json",
+      "sha256": "47b05e90a606c5a8f7061efc526f3a76abf50288968ac345e7ea6b0acb5cfe1d"
+    },
+    {
+      "path": "dccn/results/classical_b1_shortcp_etu_summary.json",
+      "sha256": "cd054771343cafa1279d1eef1dd8c8214f59c2f836ad4583845b43eb30444eaa"
+    },
+    {
+      "path": "dccn/results/e14_b2_longcp_pdpfix_retrain_summary.json",
+      "sha256": "a680cc683d8d48473d5258ffdf8fbc46f2150c8b40ac4fe2699c47bc76ad28e9"
+    },
+    {
+      "path": "dccn/results/classical_b2_longcp_eva_summary.json",
+      "sha256": "6d92efe43551121ee6ea71d72328eb405afa9014f5895d9c07aa0017e54e791c"
+    },
+    {
+      "path": "dccn/results/classical_b2_longcp_etu_summary.json",
+      "sha256": "6da476e265de9117a14f233d71c5447ee821f43f6b2537ed1eae38401682ee28"
+    },
+    {
+      "path": "dccn/results/e14_b2_shortcp_pdpfix_retrain_summary.json",
+      "sha256": "92d47a0796c9955a28a5b0fc6b2ac945dd82356a7e6febbd6f8276f4dc6a2072"
+    },
+    {
+      "path": "dccn/results/classical_b2_shortcp_eva_summary.json",
+      "sha256": "3c5ebee64bf7bd968adbf38267213ca1b8b4065c6083504c7bb952171e1f78b1"
+    },
+    {
+      "path": "dccn/results/classical_b2_shortcp_etu_summary.json",
+      "sha256": "d267929d04e8174024c0520f5c8f5e8d5ca5d2d50c7d8b094d04cfdd34356da1"
+    }
+  ],
+  "replication_unit": "three independent learned training chains; three separate classical evaluation seeds",
+  "slots_per_snr_per_repeat": 2000,
+  "not_cross_family_slot_paired": true,
+  "plot_processing": "per-source arithmetic means, points connected without smoothing; no exclusions",
+  "width_mm": 190,
+  "height_mm": 87
+}

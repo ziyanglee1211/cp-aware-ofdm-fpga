@@ -1,0 +1,62 @@
+[
+  {
+    "number": 1,
+    "upload_file": "figures/Figure_01.pdf",
+    "canonical_path": "final_figures_20261011/fig_study_overview.pdf",
+    "sha256": "0e6ab94b108b39d80e1c90114aa157dd78498ae777e9cb296f18bcac05ea129c"
+  },
+  {
+    "number": 2,
+    "upload_file": "figures/Figure_02.pdf",
+    "canonical_path": "fig_receiver_architecture.pdf",
+    "sha256": "00bf7508c87ce7c452def014be270d3a4ea28576b9195dd011c93ad3970fd473"
+  },
+  {
+    "number": 3,
+    "upload_file": "figures/Figure_03.pdf",
+    "canonical_path": "fig_quantization_contract.pdf",
+    "sha256": "4eee7d5a0e01c9315b66581adcf485eb8871770708e07820a708b01aac04b822"
+  },
+  {
+    "number": 4,
+    "upload_file": "figures/Figure_04.pdf",
+    "canonical_path": "fig_fpga_microarchitecture.pdf",
+    "sha256": "2d273690735d32343918bcedc5613e36d802b4985d9119baab9b80dd9ba112c6"
+  },
+  {
+    "number": 5,
+    "upload_file": "figures/Figure_05.pdf",
+    "canonical_path": "font_embedded_20261013/fig5_ber_matlab.pdf",
+    "sha256": "a6cccc3ee68ad4a93bfc09b2dcf5d2038e9c634c4c7bc546d1ab9359189a0721"
+  },
+  {
+    "number": 6,
+    "upload_file": "figures/Figure_06.pdf",
+    "canonical_path": "font_embedded_20261013/fig6_component_matlab.pdf",
+    "sha256": "03b774c173f18fb1e6c8425dbcddd6b459d0e9dfe5865676051b63b71e8a87c2"
+  },
+  {
+    "number": 7,
+    "upload_file": "figures/Figure_07.pdf",
+    "canonical_path": "font_embedded_20261013/fig7_precision_matlab.pdf",
+    "sha256": "a9e84140bc4370f4b063056daabbf63c1e99f592ad9069bf04e8a6fb4291367b"
+  },
+  {
+    "number": 8,
+    "upload_file": "figures/Figure_08.pdf",
+    "canonical_path": "font_embedded_20261013/fig8_a12_matlab.pdf",
+    "sha256": "1532cda18e8d78952f1db42faa16146952f63639129a33971328521349a7e0be"
+  },
+  {
+    "number": 9,
+    "upload_file": "figures/Figure_09.pdf",
+    "canonical_path": "main9_final_20261013/fig9_continued_qat.pdf",
+    "sha256": "5da1f085645094ec39935f1459953c7ef41d9107090063ff3644e72baeca2606"
+  },
+  {
+    "number": 10,
+    "upload_file": "figures/Figure_10.pdf",
+    "canonical_path": "main9_final_20261013/fig10_implementation.pdf",
+    "sha256": "6449a755ebaa1c7e52ebf260c04c0428c5615cf9519294597b6da8291105d119"
+  }
+]

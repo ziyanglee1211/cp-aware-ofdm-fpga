@@ -1,0 +1,38 @@
+{
+  "status": "locked_before_confirmation",
+  "cohort": 2026100202,
+  "selected_candidate": "back_out_a12",
+  "selection_reason": "The nominated back-output boundary benefits all nine config/seed grid means. A12 is the smaller finite-width output-only candidate tested; its screening grid means are close to A16. This does not establish equivalence or hardware fit.",
+  "confirmation_comparators": [
+    "baseline_fft",
+    "baseline_matrix",
+    "back_out_a12",
+    "back_out_a16"
+  ],
+  "variants": {
+    "baseline_fft": {},
+    "baseline_matrix": {
+      "backend": "matrix"
+    },
+    "back_out_a12": {
+      "bits": {
+        "eq_back.q_out": 12
+      }
+    },
+    "back_out_a16": {
+      "bits": {
+        "eq_back.q_out": 16
+      }
+    }
+  },
+  "primary_metric": "candidate-minus-FFT W8A8 equal-weight BER over EVA/ETU x 12/16/20/24 dB, separately for each configuration and seed",
+  "decision_rule": "Report every seed and condition; candidate progresses only if all nine seed grid means improve. Do not retune widths, weights, calibration or conditions on confirmation traffic.",
+  "slots_per_condition": 2000,
+  "bootstrap_reps": 2000,
+  "nomination_manifest_sha256": "8729036e158c6decaf5f9dee28b11c5a74a3841bef057c7ba160187fb23f4728",
+  "nomination_summary_sha256": "df0731d62b6a815a80a8259611625c325f08e19fee105c8af602b53c598216e7",
+  "nomination_audit_sha256": "e36f8c348bd5765d385c5aabb9173d0c0a437dd3d47231097650530033074fc4",
+  "confirmation_entry_sha256": "d55ee4de18df69f5f426cd9e7284096a257f08248f730fdd01a332056afb0db0",
+  "runner_sha256": "3f9a8fe4f97c2c5ac2d33e7abb0a10a7bc11fa0fa44f08cae9bc28f7ae57acf8",
+  "scope": "Independent simulated traffic, same three pretrained checkpoints; no independent retraining, new channel distribution or hardware validation."
+}

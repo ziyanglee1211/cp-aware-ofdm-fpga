@@ -1,0 +1,116 @@
+{
+  "manifest": {
+    "status": "exploratory_same_budget_ablation",
+    "question": "Effect of pruning six channel residual blocks to two, with all other structured components fixed",
+    "not_comparable_as_training_budget_to_mainline": "Mainline uses up to 3000 iterations at batch 512 and training-BER checkpoint selection; this ablation uses a fixed final checkpoint after its own common budget.",
+    "training": {
+      "iterations": 1000,
+      "batch": 256,
+      "lr": 0.0001,
+      "weight_decay": 1e-05,
+      "scheduler": "StepLR gamma=0.95 every 500 iterations",
+      "online_data_seed": "10000000 + 100000*training_seed + iteration",
+      "channels": [
+        "flat",
+        "EPA",
+        "EVA",
+        "ETU"
+      ],
+      "snr_law": "dccn.train.sample_mixed_snr",
+      "checkpoint_selection": "final fixed-budget iteration"
+    },
+    "evaluation": {
+      "channels": [
+        "EVA",
+        "ETU"
+      ],
+      "snr_db": [
+        0.0,
+        4.0,
+        8.0,
+        12.0,
+        16.0,
+        20.0,
+        24.0,
+        28.0
+      ],
+      "slots_per_snr_seed": 2000,
+      "target_ber": 0.02,
+      "point_seed": "20260904 + training_seed + 10*SNR_dB",
+      "shared_stimulus": "one transmitted batch, fading and AWGN draw for both models",
+      "threshold": "log10(BER)-linear interpolation after monotonic cumulative minimum, matching formal evaluator"
+    },
+    "environment": {
+      "python": "3.9.23",
+      "torch": "2.8.0+cpu",
+      "numpy": "2.0.2",
+      "device": "cpu",
+      "cuda": null
+    },
+    "script_sha256": "20d1b5dc3e041cd05d19d289d8ae250a259b2ab3ce150bf19a23fb3d3ce8e13b",
+    "seeds": {
+      "1": {
+        "file": "seed1.json",
+        "sha256": "d5f93a888167fcb217c32eed1e7f66048b32ef60a69cf421805d3e1b368906c7"
+      },
+      "2": {
+        "file": "seed2.json",
+        "sha256": "7504f73a86adbc89b7f533775bbcc756f7971b48201fc25177309d5ad61eba7f"
+      },
+      "3": {
+        "file": "seed3.json",
+        "sha256": "d8b25c0f3561dee96a284abdf8960a56cb5b1b19d9967311314d5abb2025fc14"
+      }
+    }
+  },
+  "per_channel": {
+    "EVA": {
+      "seeds": [
+        {
+          "seed": 1,
+          "full6": 12.8794525079832,
+          "slim2": 12.901259899807572,
+          "slim_minus_full_db": 0.021807391824372857
+        },
+        {
+          "seed": 2,
+          "full6": 13.010096832099414,
+          "slim2": 13.010032995362051,
+          "slim_minus_full_db": -6.383673736287676e-05
+        },
+        {
+          "seed": 3,
+          "full6": 12.834115868828224,
+          "slim2": 12.830679391427733,
+          "slim_minus_full_db": -0.0034364774004913556
+        }
+      ],
+      "paired_mean_slim_minus_full_db": 0.006102359228839542,
+      "paired_sample_sd_db": 0.013705098061696598
+    },
+    "ETU": {
+      "seeds": [
+        {
+          "seed": 1,
+          "full6": 13.922437591862362,
+          "slim2": 13.937303308690018,
+          "slim_minus_full_db": 0.014865716827655362
+        },
+        {
+          "seed": 2,
+          "full6": 13.936595353080817,
+          "slim2": 13.982277518866214,
+          "slim_minus_full_db": 0.04568216578539719
+        },
+        {
+          "seed": 3,
+          "full6": 13.588065044718212,
+          "slim2": 13.635789071704803,
+          "slim_minus_full_db": 0.047724026986591284
+        }
+      ],
+      "paired_mean_slim_minus_full_db": 0.036090636533214614,
+      "paired_sample_sd_db": 0.018409649960599832
+    }
+  }
+}

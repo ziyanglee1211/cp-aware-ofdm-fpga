@@ -1,0 +1,16 @@
+# Large archival evidence belongs in the complete Zenodo deposit, not ordinary Git.
+*.pt
+*.npz
+__pycache__/
+*.pyc
+generated_figures/
+generated_runs/
+*.dll
+*.exe
+*.bit
+*.dcp
+.Xil/
+*.jou
+*.log
+.env
+.env.*

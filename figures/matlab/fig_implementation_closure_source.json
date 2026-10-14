@@ -1,0 +1,113 @@
+{
+  "figure": "fig_implementation_closure",
+  "dimensions_mm": [
+    178,
+    92
+  ],
+  "question": "Does output-only A12 preserve the configured deadline and routed capacity?",
+  "archetype": "quantitative grid: schedule fit and physical capacity",
+  "sources": [
+    {
+      "path": "e5_hls/validation/s1/proj_rx_rev_m_cosim_22_2/sol_opt/syn/report/receiver_slot_opt_csynth.rpt",
+      "sha256": "0e29341b82cfd9aefdf823d92a162cb66f80975eef602713e8a599e6bab76070"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/closure.json",
+      "sha256": "05f5209c8ed503444b9c6c5bb60bf531883593eef7e3a769b92ccdb4ce18611f"
+    },
+    {
+      "path": "submission/Integration_VLSI_Journal_2026/latex_v2/revision_plot_style.py",
+      "sha256": "970ac9d38c8e3c1e531ed4fd64447e23817c145b197235dad4ec3efe4c16d3e1"
+    },
+    {
+      "path": "submission/Integration_VLSI_Journal_2026/latex_v2/plot_implementation_closure.py",
+      "sha256": "f729ed92f6d1eac61bf89e93cdd06a37ef7c497e387c4a8e7aee1300ca1cc03f"
+    }
+  ],
+  "latency_cycles": [
+    69504,
+    58115,
+    58115
+  ],
+  "budget_cycles": 58333,
+  "physical": {
+    "rev_t": {
+      "lut": 41213,
+      "ff": 37060,
+      "slices": 12687,
+      "dsp": 73,
+      "ramb36": 115,
+      "ramb18": 44,
+      "lut_memory": 2092,
+      "bram18_equivalents": 274,
+      "design_routed": true
+    },
+    "local_a12": {
+      "lut": 41533,
+      "ff": 37496,
+      "slices": 12723,
+      "dsp": 73,
+      "ramb36": 115,
+      "ramb18": 44,
+      "lut_memory": 2091,
+      "bram18_equivalents": 274,
+      "design_routed": true
+    },
+    "limits": {
+      "lut": 53200,
+      "ff": 106400,
+      "slices": 13300,
+      "dsp": 220,
+      "bram18_equivalents": 280
+    },
+    "unused_a12_capacity": {
+      "lut": 11667,
+      "ff": 68904,
+      "slices": 577,
+      "dsp": 147,
+      "bram18_equivalents": 6
+    }
+  },
+  "timing": {
+    "rev_t": {
+      "wns_ns": 0.361,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "whs_ns": 0.021,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "wpws_ns": 3.75,
+      "pulse_failing_endpoints": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_output_delay_ports": 8
+    },
+    "local_a12": {
+      "wns_ns": 0.115,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "whs_ns": 0.013,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "wpws_ns": 3.75,
+      "pulse_failing_endpoints": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_output_delay_ports": 8
+    }
+  },
+  "display_transform": "HLS cycles divided by 58333. Physical unused percentages on a labelled log axis; raw remaining counts at right.",
+  "uncertainty": "One build per design, no replicate spread implied.",
+  "exports": [
+    {
+      "filename": "fig_implementation_closure.pdf",
+      "sha256": "6c7460c3dc5814393d485dc0a7a2e1effc05b84ddaa5c5f75531098a7a991b52"
+    },
+    {
+      "filename": "fig_implementation_closure.svg",
+      "sha256": "8d2c4791fd3b8c2ee3c805f7e58ff24103e19e6808cf7d47942a4082d5c31ea1"
+    },
+    {
+      "filename": "fig_implementation_closure.png",
+      "sha256": "3d83acfbe0c06ab771bfbdfa00367b5994442a2fd57a8389c4471156908223c3"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "claim": "No archived HLS point simultaneously meets the slot deadline and LUT capacity; corrected weights change estimates despite identical source",
+  "source_csv": "submission/Integration_VLSI_Journal_2026/origin_data/hls_design_space.csv",
+  "source_sha256": "cb7197c3275723a93b8cba86d504bb39aa72080f831ad4f8d974b2b7d25ea7d7",
+  "excluded_from_panel_a_but_retained_in_table": "Naive: 2,358,857 cycles; far outside the detailed rev-E-to-M display range",
+  "tool_version_encoding": "panel a: circles = HLS 2022.1; diamonds = HLS 2022.2; gray cluster contains intermediate H/I/L revisions documented in the table",
+  "output_width_mm": 190,
+  "output_height_mm": 82,
+  "no_cross_version_causal_claim": true
+}

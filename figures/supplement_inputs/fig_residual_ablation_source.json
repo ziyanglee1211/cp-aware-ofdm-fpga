@@ -1,0 +1,15 @@
+{
+  "source": "dccn/results/ablation_b1_longcp_residual_20260927/summary.json",
+  "source_sha256": "aedcbf526b1073e2353e7829dae94711b0d12c00bb76b1a2b780739ba64ad33a",
+  "status": "exploratory_same_budget_ablation",
+  "parameter_counts": {
+    "full6": 797370,
+    "slim2": 345338
+  },
+  "replication_unit": "independent training seed with matched evaluation stimulus",
+  "n_seeds": 3,
+  "uncertainty": "sample SD of three paired per-seed threshold differences",
+  "no_equivalence_or_significance_claim": true,
+  "width_mm": 190,
+  "height_mm": 67
+}

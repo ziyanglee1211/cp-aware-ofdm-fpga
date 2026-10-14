@@ -1,0 +1,57 @@
+{
+  "condition": "b1_longcp_seed1_EVA_20dB",
+  "slots": 2000,
+  "bits": 640000,
+  "stimulus_sha256": {
+    "transmitted": "b8057607b87c3a397bbbef2f74f55b1427b7cbb9d9b80559d1d546db4ebd8bd0",
+    "labels": "020d83e1b434ac0084481a40f8bcac1c420bb1e280ab233def6d7cbe307f7471",
+    "received": "5c6f523c0f8683cb90b1de2c77742f13a2f51f7ca253896e2a0603b38bd79602",
+    "taps": "ba0c71a29f1e6fd817c527184cc9e4be3bcec2c99ef3f97572eb5f0d28ab34b7",
+    "noise_residual": "13c6a97d8352b69d9f287cdc764a9ea9f7aac16ecd381359fff5bbd3848970ce"
+  },
+  "errors": {
+    "torch_rev_t": 3567,
+    "torch_a12": 3340,
+    "c_rev_t": 3571,
+    "c_a12": 3338
+  },
+  "c_vs_torch_flips": {
+    "rev_t": 8,
+    "a12": 2
+  },
+  "c_a12_vs_c_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 3338,
+    "reference_error_bits": 3571,
+    "candidate_ber": 0.005215625,
+    "reference_ber": 0.0055796875,
+    "candidate_minus_reference_ber": -0.0003640625,
+    "slot_delta_sample_sd": 0.0028595823408630564,
+    "conditional_slot_bootstrap_95pct_ci": [
+      -0.0004891015625000001,
+      -0.00023906250000000002
+    ],
+    "bootstrap_reps": 2000,
+    "bootstrap_seed": 3375547961,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "torch_a12_vs_torch_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 3340,
+    "reference_error_bits": 3567,
+    "candidate_ber": 0.00521875,
+    "reference_ber": 0.0055734375,
+    "candidate_minus_reference_ber": -0.0003546875,
+    "slot_delta_sample_sd": 0.0028367526632895033,
+    "conditional_slot_bootstrap_95pct_ci": null,
+    "bootstrap_reps": 0,
+    "bootstrap_seed": 20261001,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "npz_sha256": "9c066383bf8f36d5be15e053bd4f92635d7474836ae175dadbed7a1eb1c09095",
+  "elapsed_seconds": 3.7060139000000003
+}

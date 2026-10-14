@@ -1,0 +1,92 @@
+[
+  {
+    "figure_input": "fig_ber_paired_b1_longcp_source.json",
+    "source": "dccn/results/paired_b1_longcp_pdpfix_summary.json",
+    "sha256": "6846d5e9bef1fc82bb19e4c5ce7d5ae488b589c5d96c4da2a9fd8272b0687328"
+  },
+  {
+    "figure_input": "fig_ber_paired_b1_longcp_source.json",
+    "source": "dccn/results/paired_b1_longcp_pdpfix_seed1.json",
+    "sha256": "8c2de6ca0a6de7ef89b33d48a64921d6a39abfd097cee20af45b6405c62f89ff"
+  },
+  {
+    "figure_input": "fig_ber_paired_b1_longcp_source.json",
+    "source": "dccn/results/paired_b1_longcp_pdpfix_seed2.json",
+    "sha256": "b96d7ae3d96eab7257481373970cf38ae2aeb8ad2fb677279c42d49050518fe1"
+  },
+  {
+    "figure_input": "fig_ber_paired_b1_longcp_source.json",
+    "source": "dccn/results/paired_b1_longcp_pdpfix_seed3.json",
+    "sha256": "c0615e28a278b0206bbf562aef8cc5ec6b68ac06e6f0826d6c2f65dbbb1409b5"
+  },
+  {
+    "figure_input": "fig_ber_paired_b1_longcp_source.json",
+    "source": "dccn/results/pdp_wiener_b1_longcp_pdpfix_summary.json",
+    "sha256": "55750520fa3416bcf49506c596dcf1288c661c05aa642c07ed30480ef3893c71"
+  },
+  {
+    "figure_input": "fig_component_evidence_source.json",
+    "source": "dccn/experiments/component_ablation_20261001/common_budget_7arm/summary.json",
+    "sha256": "526c637aa7f1c147fdb29cdaa8eb3ed1ce4a827d87a84642dfaca41400eee41f"
+  },
+  {
+    "figure_input": "fig_component_evidence_source.json",
+    "source": "dccn/experiments/component_ablation_20261001/common_budget_7arm/protocol.json",
+    "sha256": "a98e2ad4ab69a8f00824152b8f79348c82e785c3455556c25041a24b760cbefe"
+  },
+  {
+    "figure_input": "fig_component_evidence_source.json",
+    "source": "dccn/experiments/component_ablation_20261001/common_budget_7arm/seed1.json",
+    "sha256": "794228c1230ff9add331d1ce3d57b1ae15ae5ede4b6aba8f596ed33c59975b26"
+  },
+  {
+    "figure_input": "fig_component_evidence_source.json",
+    "source": "dccn/experiments/component_ablation_20261001/common_budget_7arm/seed2.json",
+    "sha256": "bebb626867914dc328e7268578c371f58eaa72f5a26299d83fd3c5dbfd0a19c4"
+  },
+  {
+    "figure_input": "fig_component_evidence_source.json",
+    "source": "dccn/experiments/component_ablation_20261001/common_budget_7arm/seed3.json",
+    "sha256": "c9b08481f0dd91451dabf84f20ea827aa388e07ca2c2724835cb493e41051fb4"
+  },
+  {
+    "figure_input": "fig_precision_evidence_source.json",
+    "source": "dccn/experiments/precision_localization_20261001/summary/precision_summary.json",
+    "sha256": "2ce9818196fc1bb703fdc890cf213004f9cf439da41591b10caef120eb5b5d5d"
+  },
+  {
+    "figure_input": "fig_local_a12_evidence_source.json",
+    "source": "dccn/experiments/back_precision_followup_20261002/confirmation_decision.json",
+    "sha256": "4c33c3911a995a68671ca1039c8ddeb09949a0f1f27d2ec6e94a2d84f0504ea2"
+  },
+  {
+    "figure_input": "fig_local_a12_evidence_source.json",
+    "source": "dccn/experiments/back_precision_followup_20261002/confirmation_protocol.json",
+    "sha256": "755996a2dc37165e3dbf84e823b0f76b48a4628936899e97022d0dd77f0cbdd8"
+  },
+  {
+    "figure_input": "fig_local_a12_evidence_source.json",
+    "source": "dccn/experiments/back_precision_followup_20261002/confirmation_2000_audit/grid_summary.csv",
+    "sha256": "d76ff5edc10029aaf44217861682928ae67e0e931b1f1092722658a21288a054"
+  },
+  {
+    "figure_input": "fig_local_a12_evidence_source.json",
+    "source": "e5_hls/experiments/local_a12_20261002/closure.json",
+    "sha256": "05f5209c8ed503444b9c6c5bb60bf531883593eef7e3a769b92ccdb4ce18611f"
+  },
+  {
+    "figure_input": "fig_local_a12_evidence_source.json",
+    "source": "e5_hls/experiments/local_a12_20261002/transfer_audit/summary.json",
+    "sha256": "a3e98c53c48b86c389de35e8b4fba27e96853f5b521a650755772c73f3101f65"
+  },
+  {
+    "figure_input": "fig_implementation_closure_source.json",
+    "source": "e5_hls/validation/s1/proj_rx_rev_m_cosim_22_2/sol_opt/syn/report/receiver_slot_opt_csynth.rpt",
+    "sha256": "0e29341b82cfd9aefdf823d92a162cb66f80975eef602713e8a599e6bab76070"
+  },
+  {
+    "figure_input": "fig_implementation_closure_source.json",
+    "source": "e5_hls/experiments/local_a12_20261002/closure.json",
+    "sha256": "05f5209c8ed503444b9c6c5bb60bf531883593eef7e3a769b92ccdb4ce18611f"
+  }
+]

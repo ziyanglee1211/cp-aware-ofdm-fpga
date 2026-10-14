@@ -1,0 +1,57 @@
+{
+  "condition": "b1_longcp_seed1_ETU_24dB",
+  "slots": 2000,
+  "bits": 640000,
+  "stimulus_sha256": {
+    "transmitted": "2dfe67765104dbc3b3b2cf94ebb13ca62cae71a83efdd7fc067e46359916f104",
+    "labels": "10742ed5935d75e1b494e646b6a40559bbf91beac2432ade0337b8a79ad66b00",
+    "received": "7dc7837a44a8c5e73d82cf397acdf40d2f25ec832554ec34b77865e2e37bfc14",
+    "taps": "6af84a7954090679a44a067038b4b55e197b3e65cda3e6883c10a74ccd9f0666",
+    "noise_residual": "3ccc45a957821a54f8e7e0dc1b06bd5b1150a637ff806bb6ae1ab3c73fbbb8c7"
+  },
+  "errors": {
+    "torch_rev_t": 3776,
+    "torch_a12": 3545,
+    "c_rev_t": 3779,
+    "c_a12": 3545
+  },
+  "c_vs_torch_flips": {
+    "rev_t": 5,
+    "a12": 2
+  },
+  "c_a12_vs_c_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 3545,
+    "reference_error_bits": 3779,
+    "candidate_ber": 0.0055390625,
+    "reference_ber": 0.0059046875,
+    "candidate_minus_reference_ber": -0.00036562500000000006,
+    "slot_delta_sample_sd": 0.0032110632114377515,
+    "conditional_slot_bootstrap_95pct_ci": [
+      -0.0005094140625000002,
+      -0.00022031250000000002
+    ],
+    "bootstrap_reps": 2000,
+    "bootstrap_seed": 4076041449,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "torch_a12_vs_torch_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 3545,
+    "reference_error_bits": 3776,
+    "candidate_ber": 0.0055390625,
+    "reference_ber": 0.0059,
+    "candidate_minus_reference_ber": -0.00036093750000000004,
+    "slot_delta_sample_sd": 0.0032169133030271963,
+    "conditional_slot_bootstrap_95pct_ci": null,
+    "bootstrap_reps": 0,
+    "bootstrap_seed": 20261001,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "npz_sha256": "758c3629b753d79f49b46e5acf4fed530196d23d1c7613bda169ba3f7e144a60",
+  "elapsed_seconds": 3.643048699999998
+}

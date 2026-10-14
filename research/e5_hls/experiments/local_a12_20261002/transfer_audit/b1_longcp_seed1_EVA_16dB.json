@@ -1,0 +1,57 @@
+{
+  "condition": "b1_longcp_seed1_EVA_16dB",
+  "slots": 2000,
+  "bits": 640000,
+  "stimulus_sha256": {
+    "transmitted": "118da3b20020028b5c97627cbcc1d393eb166ae0cc07640073ab11a92a5abbdd",
+    "labels": "6705f678c36097310cd40e37e6ab177210cd6101faa30ebfadf04b9eee68315d",
+    "received": "9c2a077a4fccdf97a12fa5c339cb57020df93e9398819f1b2aab4e262a9de106",
+    "taps": "66689c074096d9c23c7e9f07644da344f215519b0c03dd2da7cf021bd3a87a01",
+    "noise_residual": "9a9e275d7af0c1729e754e86a52510e9dc323616d0f95de08e57170452f6d7f4"
+  },
+  "errors": {
+    "torch_rev_t": 7298,
+    "torch_a12": 7068,
+    "c_rev_t": 7300,
+    "c_a12": 7073
+  },
+  "c_vs_torch_flips": {
+    "rev_t": 12,
+    "a12": 9
+  },
+  "c_a12_vs_c_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 7073,
+    "reference_error_bits": 7300,
+    "candidate_ber": 0.0110515625,
+    "reference_ber": 0.01140625,
+    "candidate_minus_reference_ber": -0.0003546875,
+    "slot_delta_sample_sd": 0.0036313157487165982,
+    "conditional_slot_bootstrap_95pct_ci": [
+      -0.0005172265625000002,
+      -0.00019375000000000002
+    ],
+    "bootstrap_reps": 2000,
+    "bootstrap_seed": 4039402641,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "torch_a12_vs_torch_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 7068,
+    "reference_error_bits": 7298,
+    "candidate_ber": 0.01104375,
+    "reference_ber": 0.011403125,
+    "candidate_minus_reference_ber": -0.000359375,
+    "slot_delta_sample_sd": 0.0036315272929739644,
+    "conditional_slot_bootstrap_95pct_ci": null,
+    "bootstrap_reps": 0,
+    "bootstrap_seed": 20261001,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "npz_sha256": "aaa9090bf57b7605f79e0c050de0753c97834efdfc2fcebe634114f319cca28e",
+  "elapsed_seconds": 3.551595999999999
+}

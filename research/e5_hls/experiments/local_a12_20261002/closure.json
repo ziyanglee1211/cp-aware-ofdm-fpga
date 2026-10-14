@@ -1,0 +1,497 @@
+{
+  "status": "pass",
+  "checks": {
+    "native_sources_unchanged": true,
+    "static_and_build_sources_unchanged": true,
+    "original_bitstream_preserved": true,
+    "paired_raw_counts_recomputed": true,
+    "all_eight_c_conditions_improve": true,
+    "both_fixed_contracts_zero": true,
+    "integrated_process_steps_success": true,
+    "integrated_log_hash_verified": true,
+    "integrated_sources_unchanged": true,
+    "four_ordered_starts_and_completions": true,
+    "two_strict_zero_system_runs": true,
+    "system_a12_marker_and_unmasked_finite_outputs": true,
+    "same_hls_tool_device_clock": true,
+    "latency_within_budget": true,
+    "routed_physical_resource_fit": true,
+    "internal_timing_met": true,
+    "all_required_nets_routed": true,
+    "drc_has_no_error_or_critical_rules": true,
+    "new_bitstream_build_complete": true,
+    "core_cosim_pass": true
+  },
+  "scope": "BPSK long-CP seed1 only; isolated local A12 candidate with int16 containers; no board execution",
+  "transfer": {
+    "unique_slots": 16000,
+    "unique_bits": 5120000,
+    "total_errors": {
+      "torch_rev_t": 64455,
+      "torch_a12": 62536,
+      "c_rev_t": 64462,
+      "c_a12": 62546
+    },
+    "ber": {
+      "torch_rev_t": 0.0125888671875,
+      "torch_a12": 0.0122140625,
+      "c_rev_t": 0.012590234375,
+      "c_a12": 0.012216015625
+    },
+    "software_corrected_net": 1919,
+    "c_corrected_net": 1916,
+    "retained_net_gain_ratio": 0.9984366857738406,
+    "c_relative_ber_reduction": 0.02972293754459992,
+    "c_vs_torch_total_flips": {
+      "rev_t": 61,
+      "a12": 42
+    },
+    "conditions_c_a12_improves": 8,
+    "limitations": "One fixed checkpoint; same prior confirmation inputs, not a fresh cohort or statistical equivalence claim. Native C mapping, not RTL on all these slots."
+  },
+  "condition_contrasts": [
+    {
+      "condition": "b1_longcp_seed1_EVA_12dB",
+      "corrected": 2146,
+      "harmed": 1977,
+      "net_corrected": 169,
+      "paired": {
+        "slots": 2000,
+        "bits_per_slot": 320,
+        "candidate_error_bits": 16550,
+        "reference_error_bits": 16719,
+        "candidate_ber": 0.025859375,
+        "reference_ber": 0.0261234375,
+        "candidate_minus_reference_ber": -0.00026406250000000003,
+        "slot_delta_sample_sd": 0.004355235395046619,
+        "conditional_slot_bootstrap_95pct_ci": [
+          -0.0004469140625,
+          -7.812500000000002e-05
+        ],
+        "bootstrap_reps": 2000,
+        "bootstrap_seed": 2308651939,
+        "resampling_unit": "one common simulated coherence slot",
+        "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+      }
+    },
+    {
+      "condition": "b1_longcp_seed1_EVA_16dB",
+      "corrected": 1488,
+      "harmed": 1261,
+      "net_corrected": 227,
+      "paired": {
+        "slots": 2000,
+        "bits_per_slot": 320,
+        "candidate_error_bits": 7073,
+        "reference_error_bits": 7300,
+        "candidate_ber": 0.0110515625,
+        "reference_ber": 0.01140625,
+        "candidate_minus_reference_ber": -0.0003546875,
+        "slot_delta_sample_sd": 0.0036313157487165982,
+        "conditional_slot_bootstrap_95pct_ci": [
+          -0.0005172265625000002,
+          -0.00019375000000000002
+        ],
+        "bootstrap_reps": 2000,
+        "bootstrap_seed": 4039402641,
+        "resampling_unit": "one common simulated coherence slot",
+        "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+      }
+    },
+    {
+      "condition": "b1_longcp_seed1_EVA_20dB",
+      "corrected": 989,
+      "harmed": 756,
+      "net_corrected": 233,
+      "paired": {
+        "slots": 2000,
+        "bits_per_slot": 320,
+        "candidate_error_bits": 3338,
+        "reference_error_bits": 3571,
+        "candidate_ber": 0.005215625,
+        "reference_ber": 0.0055796875,
+        "candidate_minus_reference_ber": -0.0003640625,
+        "slot_delta_sample_sd": 0.0028595823408630564,
+        "conditional_slot_bootstrap_95pct_ci": [
+          -0.0004891015625000001,
+          -0.00023906250000000002
+        ],
+        "bootstrap_reps": 2000,
+        "bootstrap_seed": 3375547961,
+        "resampling_unit": "one common simulated coherence slot",
+        "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+      }
+    },
+    {
+      "condition": "b1_longcp_seed1_EVA_24dB",
+      "corrected": 843,
+      "harmed": 656,
+      "net_corrected": 187,
+      "paired": {
+        "slots": 2000,
+        "bits_per_slot": 320,
+        "candidate_error_bits": 2044,
+        "reference_error_bits": 2231,
+        "candidate_ber": 0.00319375,
+        "reference_ber": 0.0034859375,
+        "candidate_minus_reference_ber": -0.0002921875,
+        "slot_delta_sample_sd": 0.0029251666751456133,
+        "conditional_slot_bootstrap_95pct_ci": [
+          -0.0004312890625000001,
+          -0.00016875
+        ],
+        "bootstrap_reps": 2000,
+        "bootstrap_seed": 3345767802,
+        "resampling_unit": "one common simulated coherence slot",
+        "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+      }
+    },
+    {
+      "condition": "b1_longcp_seed1_ETU_12dB",
+      "corrected": 2478,
+      "harmed": 2178,
+      "net_corrected": 300,
+      "paired": {
+        "slots": 2000,
+        "bits_per_slot": 320,
+        "candidate_error_bits": 16664,
+        "reference_error_bits": 16964,
+        "candidate_ber": 0.0260375,
+        "reference_ber": 0.02650625,
+        "candidate_minus_reference_ber": -0.00046875,
+        "slot_delta_sample_sd": 0.004676674802261009,
+        "conditional_slot_bootstrap_95pct_ci": [
+          -0.0006640625,
+          -0.00026558593750000025
+        ],
+        "bootstrap_reps": 2000,
+        "bootstrap_seed": 1331170242,
+        "resampling_unit": "one common simulated coherence slot",
+        "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+      }
+    },
+    {
+      "condition": "b1_longcp_seed1_ETU_16dB",
+      "corrected": 1704,
+      "harmed": 1470,
+      "net_corrected": 234,
+      "paired": {
+        "slots": 2000,
+        "bits_per_slot": 320,
+        "candidate_error_bits": 8471,
+        "reference_error_bits": 8705,
+        "candidate_ber": 0.0132359375,
+        "reference_ber": 0.0136015625,
+        "candidate_minus_reference_ber": -0.00036562499999999996,
+        "slot_delta_sample_sd": 0.004005772892664886,
+        "conditional_slot_bootstrap_95pct_ci": [
+          -0.0005328125,
+          -0.00018906250000000002
+        ],
+        "bootstrap_reps": 2000,
+        "bootstrap_seed": 2652451245,
+        "resampling_unit": "one common simulated coherence slot",
+        "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+      }
+    },
+    {
+      "condition": "b1_longcp_seed1_ETU_20dB",
+      "corrected": 1397,
+      "harmed": 1065,
+      "net_corrected": 332,
+      "paired": {
+        "slots": 2000,
+        "bits_per_slot": 320,
+        "candidate_error_bits": 4861,
+        "reference_error_bits": 5193,
+        "candidate_ber": 0.0075953125,
+        "reference_ber": 0.0081140625,
+        "candidate_minus_reference_ber": -0.00051875,
+        "slot_delta_sample_sd": 0.003550816291455788,
+        "conditional_slot_bootstrap_95pct_ci": [
+          -0.0006797265625,
+          -0.00036250000000000003
+        ],
+        "bootstrap_reps": 2000,
+        "bootstrap_seed": 4011659777,
+        "resampling_unit": "one common simulated coherence slot",
+        "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+      }
+    },
+    {
+      "condition": "b1_longcp_seed1_ETU_24dB",
+      "corrected": 1166,
+      "harmed": 932,
+      "net_corrected": 234,
+      "paired": {
+        "slots": 2000,
+        "bits_per_slot": 320,
+        "candidate_error_bits": 3545,
+        "reference_error_bits": 3779,
+        "candidate_ber": 0.0055390625,
+        "reference_ber": 0.0059046875,
+        "candidate_minus_reference_ber": -0.00036562500000000006,
+        "slot_delta_sample_sd": 0.0032110632114377515,
+        "conditional_slot_bootstrap_95pct_ci": [
+          -0.0005094140625000002,
+          -0.00022031250000000002
+        ],
+        "bootstrap_reps": 2000,
+        "bootstrap_seed": 4076041449,
+        "resampling_unit": "one common simulated coherence slot",
+        "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+      }
+    }
+  ],
+  "hls": {
+    "rev_t": {
+      "version": "2022.2",
+      "part": "xc7z020-clg484-1",
+      "clock_ns": 10.0,
+      "latency": 58115,
+      "interval": 58116,
+      "resources": {
+        "BRAM_18K": 277,
+        "DSP": 169,
+        "FF": 47365,
+        "LUT": 63117,
+        "URAM": 0
+      }
+    },
+    "local_a12": {
+      "version": "2022.2",
+      "part": "xc7z020-clg484-1",
+      "clock_ns": 10.0,
+      "latency": 58115,
+      "interval": 58116,
+      "resources": {
+        "BRAM_18K": 277,
+        "DSP": 169,
+        "FF": 47397,
+        "LUT": 63093,
+        "URAM": 0
+      }
+    }
+  },
+  "physical": {
+    "rev_t": {
+      "lut": 41213,
+      "ff": 37060,
+      "slices": 12687,
+      "dsp": 73,
+      "ramb36": 115,
+      "ramb18": 44,
+      "lut_memory": 2092,
+      "bram18_equivalents": 274,
+      "design_routed": true
+    },
+    "local_a12": {
+      "lut": 41533,
+      "ff": 37496,
+      "slices": 12723,
+      "dsp": 73,
+      "ramb36": 115,
+      "ramb18": 44,
+      "lut_memory": 2091,
+      "bram18_equivalents": 274,
+      "design_routed": true
+    },
+    "limits": {
+      "lut": 53200,
+      "ff": 106400,
+      "slices": 13300,
+      "dsp": 220,
+      "bram18_equivalents": 280
+    },
+    "unused_a12_capacity": {
+      "lut": 11667,
+      "ff": 68904,
+      "slices": 577,
+      "dsp": 147,
+      "bram18_equivalents": 6
+    }
+  },
+  "timing": {
+    "rev_t": {
+      "wns_ns": 0.361,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "whs_ns": 0.021,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "wpws_ns": 3.75,
+      "pulse_failing_endpoints": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_output_delay_ports": 8
+    },
+    "local_a12": {
+      "wns_ns": 0.115,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "whs_ns": 0.013,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "wpws_ns": 3.75,
+      "pulse_failing_endpoints": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_output_delay_ports": 8
+    }
+  },
+  "routing": {
+    "routable_nets": 75483,
+    "fully_routed_nets": 75483,
+    "routing_errors": 0
+  },
+  "drc_rules": [
+    {
+      "rule": "DPIP-1",
+      "severity": "Warning",
+      "count": 114
+    },
+    {
+      "rule": "DPOP-1",
+      "severity": "Warning",
+      "count": 74
+    },
+    {
+      "rule": "DPOP-2",
+      "severity": "Warning",
+      "count": 29
+    },
+    {
+      "rule": "ZPS7-1",
+      "severity": "Warning",
+      "count": 1
+    },
+    {
+      "rule": "AVAL-4",
+      "severity": "Advisory",
+      "count": 59
+    },
+    {
+      "rule": "AVAL-5",
+      "severity": "Advisory",
+      "count": 15
+    },
+    {
+      "rule": "REQP-1725",
+      "severity": "Advisory",
+      "count": 14
+    }
+  ],
+  "budget": {
+    "slot_cycles": 58333,
+    "hls_latency_margin": 218,
+    "hls_interval_margin": 217
+  },
+  "core_cosim": {
+    "latency_min": 57149,
+    "latency_max": 57149,
+    "interval_min": 57150,
+    "unique_decisions": 1280
+  },
+  "integrated": {
+    "calls": 4,
+    "start_to_done_cycles": [
+      57149,
+      57149,
+      57149,
+      57149
+    ],
+    "two_slot_run_cycles": [
+      115585,
+      115585
+    ],
+    "comparisons": 1280,
+    "unique_decisions": 640,
+    "input_terminal_prefetch_out_of_range_events": 8,
+    "timer_delays_accelerated": true
+  },
+  "selected_bitstream_sha256": "c9488741d5bcd0075855ea1682fde919f9a42b6e5a83230a1450f13ff148168e",
+  "artifacts": [
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/static_audit.json",
+      "sha256": "185561cea4f463479248e81a17b37f027b0a64f888de203fc76ff5c256fff1ca"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/transfer_audit/manifest.json",
+      "sha256": "607a3b838eec0e0a45288529657ea994187f901d9b33ddd1a1184a01537e5bcc"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/transfer_audit/summary.json",
+      "sha256": "a3e98c53c48b86c389de35e8b4fba27e96853f5b521a650755772c73f3101f65"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/audit_sources.py",
+      "sha256": "8c6329d0b96653023c2f8de9f5467bffa355e740b713cc1e18ca85dffa766076"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/close_evidence.py",
+      "sha256": "5b6f3bc07589b345dd5acebe18a68c38857a2a09efc8d8714e6efdcfdcf07b9f"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board_build_console.log",
+      "sha256": "a15e87c59eb4b0a1f29382837d096577452ec1548d313fb53861c2d27a2a67ea"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/cosim_export_console.log",
+      "sha256": "22447c8b98bb0640f8aec7185c8a22b6b9eb9399e8c3c11d0bc2b473ab43b6b9"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/proj_a12/sol_opt/sim/report/receiver_slot_opt_cosim.rpt",
+      "sha256": "df4b7a44eac8744a94fe0466454a79344a2dbd6a23e2b6cfcb9d1bbbba8ea0fd"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/xsim_integrated_v1/simulation_result.json",
+      "sha256": "02a4019d82f8d2e9e555539edec4a65c79b10caeb00827e3d1e6cc0e3376bdcc"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/xsim_integrated_v1/simulate_console.log",
+      "sha256": "2576d07a33a361107d5d8f750f20afd7bc79af9f47fc691244055036346cba36"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/test_local_a12.py",
+      "sha256": "7d162990290cd124ecfe524ace03d98b9e829a4e5699900e66b833dbe0b690ce"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/unit_tests.log",
+      "sha256": "210ececaddaedbb460cf8ebb7e2b24b52962cdce396bb17a2ccb48501b727e2c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.runs/impl_1/zed_selftest_top_methodology_drc_routed.rpt",
+      "sha256": "831a78b499c4c05f311d614cb91879d2639960226dd3cf181ba38dfab6dd7f20"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.runs/impl_1/zed_selftest_top.bit",
+      "sha256": "c9488741d5bcd0075855ea1682fde919f9a42b6e5a83230a1450f13ff148168e"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/reports/system_drc.rpt",
+      "sha256": "e7bc225986e50812d3213d50ee457d72a189002c267750e6426623c009265011"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/reports/system_power.rpt",
+      "sha256": "31884f4ba0dc5eef62cd5b28df32431b412607001277908c6b7fcde70d0e84d9"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/reports/system_route_status.rpt",
+      "sha256": "9499a6651b98be6e9f0e1901f73e142f01ac26f169145ee2aab15653643eed62"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/reports/system_timing_summary.rpt",
+      "sha256": "3038a67291b9a6802c7d5fe8d5a3663e90e7ba198aa1f466c51bb9f985f3e092"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/reports/system_utilization.rpt",
+      "sha256": "03dee7c83f03752902cf3cb671a280dc1b8ac46086977c3bb9fbfd41c8edca2d"
+    }
+  ],
+  "limitations": [
+    "Not universally C/PyTorch bit-exact: 61 baseline and 42 candidate decision flips on 5.12M shared bits.",
+    "Reuse of prior confirmation inputs measures deployment transfer, not new independent confirmation.",
+    "BER native C campaign and finite RTL/system contracts have different coverage; not 16,000 RTL slots.",
+    "Physical results include two-slot self-test wrapper, not buffered production I/O. LED outputs have no output-delay constraints.",
+    "Behavioral integration simulation has DSP transient warnings and unconsumed terminal prefetches; output finiteness is asserted, not masked.",
+    "No JTAG programming, LED observation, physical power measurement or QPSK hardware evidence."
+  ]
+}

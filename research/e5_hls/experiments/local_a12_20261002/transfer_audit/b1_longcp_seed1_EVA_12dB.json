@@ -1,0 +1,57 @@
+{
+  "condition": "b1_longcp_seed1_EVA_12dB",
+  "slots": 2000,
+  "bits": 640000,
+  "stimulus_sha256": {
+    "transmitted": "9a1f48aa3451e3ed9049a3c2cc8d12e43c706c9a2d6bfe1e0910c7dc4da841e2",
+    "labels": "06a9b3032cc37162f5d768b1bee779f3b15be00afcd8abb3680b7546e5286367",
+    "received": "90ac9b045aa9d0789cd74c7341786688bb2d78077a410d5486f35980789578ca",
+    "taps": "d43b587b97e7323a76a52da4b5ff38b949896b822a74c68391743e33054fbfed",
+    "noise_residual": "11680bd9751fcb7e72ede60032ecdb5364396f697764a64a8dd21c7eb14f7bdd"
+  },
+  "errors": {
+    "torch_rev_t": 16717,
+    "torch_a12": 16541,
+    "c_rev_t": 16719,
+    "c_a12": 16550
+  },
+  "c_vs_torch_flips": {
+    "rev_t": 20,
+    "a12": 15
+  },
+  "c_a12_vs_c_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 16550,
+    "reference_error_bits": 16719,
+    "candidate_ber": 0.025859375,
+    "reference_ber": 0.0261234375,
+    "candidate_minus_reference_ber": -0.00026406250000000003,
+    "slot_delta_sample_sd": 0.004355235395046619,
+    "conditional_slot_bootstrap_95pct_ci": [
+      -0.0004469140625,
+      -7.812500000000002e-05
+    ],
+    "bootstrap_reps": 2000,
+    "bootstrap_seed": 2308651939,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "torch_a12_vs_torch_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 16541,
+    "reference_error_bits": 16717,
+    "candidate_ber": 0.0258453125,
+    "reference_ber": 0.0261203125,
+    "candidate_minus_reference_ber": -0.000275,
+    "slot_delta_sample_sd": 0.004355119017412488,
+    "conditional_slot_bootstrap_95pct_ci": null,
+    "bootstrap_reps": 0,
+    "bootstrap_seed": 20261001,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "npz_sha256": "ce6941c3d83e1d95748b4da4a9c4bae4fee8d7e6aaa789163b121ed91e268bd3",
+  "elapsed_seconds": 3.7353828
+}

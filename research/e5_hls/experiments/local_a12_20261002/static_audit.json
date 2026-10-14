@@ -1,0 +1,747 @@
+{
+  "static_chain_status": "pass",
+  "checks": {
+    "native_transfer_complete_and_sources_identical": true,
+    "rev_t_core_original": true,
+    "rev_t_bitstream_original": true,
+    "frozen_headers": true,
+    "only_fabric_attribute_file_changed": true,
+    "attribute_only_no_arithmetic_change": true,
+    "system_ip_matches_derived_hls_ip": true,
+    "wrapper_logic_unchanged_except_rom_paths": true,
+    "strict_zero_threshold": true,
+    "identical_clock_pin_constraints": true,
+    "rom_input_copies_unchanged": true,
+    "independent_a12_golden_rom": true,
+    "testbench_checks_unchanged": true,
+    "cosim_pass_independent_golden": true
+  },
+  "artifacts": [
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt.v",
+      "sha256": "b6126b5cfbd75be9f61f15092dd05cc7d285206614227c8d14ebdb36bced16cf"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_brqr_RAM_AUTO_1R1W.v",
+      "sha256": "fe375ab344e37cd979b7b4ab5b7b34ac1350fc32f274fd5d65a96ff0f769f6dc"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_cin_sum_RAM_AUTO_1R1W.v",
+      "sha256": "3f9b6afdafe385c21ac8a35fa939159712bf3133bda77e88aeae8a5f5d7e1bbb"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_cout_sum_RAM_AUTO_1R1W.v",
+      "sha256": "36316921faffd2729bc1c70f7d82913a020c73756f4abab641afe08438b40202"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_dXr_RAM_AUTO_1R1W.v",
+      "sha256": "dd7ab95aca203c12edde1d4cf2cade7138737016ed58c445cc35bf1a1f61d3a1"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_dzr_RAM_AUTO_1R1W.v",
+      "sha256": "c0c11ab482ee639110e6d34d764ba0d98bc913843d9181e2ba5fe2833515d9b8"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fadd_32ns_32ns_32_5_full_dsp_1.v",
+      "sha256": "b083d13218bc2c2a94d81bd8ae66515ea2655f96e0a5564b3fe215902768eaee"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_faddfsub_32ns_32ns_32_5_full_dsp_1.v",
+      "sha256": "84bb5a63be13b8b62c1a906a54f93c4e7c716e71557b67e0f3e598bdb7534c51"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+      "sha256": "0d657e6de24d785d76a427acdb819c021a551dd1c51c2569fef01cb02b9a4861"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fdiv_32ns_32ns_32_16_no_dsp_1.v",
+      "sha256": "69ffca3a4a160bfffda4140280913211faaba74482f9eca15e5b18dc79c6553e"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64.v",
+      "sha256": "b177ec70bb571bb029bf1155b72b9d229cd446dd7b7fd53a841ac84622351907"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_a0r_RAM_T2P_BRAM_1R1W.v",
+      "sha256": "7b9040ca40107cef3e7539e1eab2475f4fffedaa61e408f06c6b2e8ae014f329"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_Pipeline_VITIS_LOOP_281_1.v",
+      "sha256": "06c97b96fa3054624910c7fa5d6f355407e817a54915e48105d3cc26ecd080f0"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_Pipeline_VITIS_LOOP_288_2.v",
+      "sha256": "8c25b214fb1c62034fbf6b54b8c9d0aa7f82c1662bb22292af9b1c49d2fffc82"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_Pipeline_VITIS_LOOP_289_4_VITIS_LOOP_289_5.v",
+      "sha256": "4fb366b8846938c288409b9caa4b0b17f30141e12bdcdba61a9232012a6c3fe1"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_Pipeline_VITIS_LOOP_290_6_VITIS_LOOP_290_7.v",
+      "sha256": "ac97f3d807bae804fa8de9883ee8eab451ecb391d74dc70790f54a3ce3b54ab3"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_Pipeline_VITIS_LOOP_291_8_VITIS_LOOP_291_9.v",
+      "sha256": "2da8d113644b1f2ed3a6fa89b980c80736e28d4f5d58d517397afab6f62304fa"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_Pipeline_VITIS_LOOP_292_10_VITIS_LOOP_292_11.v",
+      "sha256": "b8a0be7d98c1032fc8b5ba6bf66ae95d0d005cc20d5b910eb7f41b8e63f6da5d"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_Pipeline_VITIS_LOOP_293_13.v",
+      "sha256": "7cc69aba27aa364d211cdafd347c32e84867ec1368de91e73bc73789cc882fac"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_Pipeline_VITIS_LOOP_294_14.v",
+      "sha256": "a75ff6f07fcda85e579c584923a2e13b19f5c71d27ca5f891b4c51d7994eba4a"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_TW_IM_ROM_AUTO_1R.v",
+      "sha256": "86b72c7a7dad0670d0439a878121b9837286761c2774de472d7d8395c62b6911"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_TW_RE_ROM_AUTO_1R.v",
+      "sha256": "e5e9907e82853718b23a77ddca5f98eec64369c25cab3d86c281320662257061"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_flow_control_loop_pipe_sequential_init.v",
+      "sha256": "0fa704cb3cc941686260cf7cb72103933f283c4d988e67593e41fd49058b4fbe"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "sha256": "aeec064764c45b540ff1a73dc9fe637a754cb86b5a48fcebde41d60f68bac555"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_Fqr_RAM_AUTO_1R1W.v",
+      "sha256": "045209ed6baad062432aaee4f1599ad931e4391e11993c76e1a2cc4096e55c53"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fsub_32ns_32ns_32_5_full_dsp_1.v",
+      "sha256": "d1abcb46888ed20ac308f3b23fbbb44442f93b61e456f0b80249b432597eaa0c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_Hoqr_RAM_AUTO_1R1W.v",
+      "sha256": "bb00928aa3bab9f2c68e9d8e1b8544cf854db9d4310f944b231671c97b65125c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_hq_RAM_AUTO_1R1W.v",
+      "sha256": "daf121774a708300ebe94cc260ecf83e9f8a580db7197336eba6ee321f774563"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_LUT_RSQRT_ROM_AUTO_1R.v",
+      "sha256": "37fb9a38429196ee352ad38a4aeb2618a4758194fd4f8ee71300ee3c3bf833a8"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_MF_BIAS_IM_ROM_2P_LUTRAM_1R.v",
+      "sha256": "ee3ddee9c4aa371805fcdd0ef4e087eb302adfa6496b2a4bc56769900648df72"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_MF_BIAS_RE_ROM_2P_LUTRAM_1R.v",
+      "sha256": "a3c6f6ada6eaebe2002d69622bcb9cb864d59e6c6d9d26765e119b98e79c013d"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_mul_8s_8s_16_1_1.v",
+      "sha256": "9aa64ba1997281b56bb9f8e3517f87fd85741df7fa1aa4d5fdc7cc1b0cb654e8"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_mux_164_32_1_1.v",
+      "sha256": "4e51a4c600b658036a62ee84d96133edf699418168c782fe52a9093d87aced95"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_mux_21_32_1_1.v",
+      "sha256": "9bc601c8c9e4181390c732a1951e2f4921f9fe62bea6f75328972f86e8482937"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_mux_21_8_1_1.v",
+      "sha256": "453cd64335c595178326b282404a70b09293050db05454d718ef5bdf892e04e4"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_mux_83_32_1_1.v",
+      "sha256": "da9dac03bb39ccdc4e357ec87b1622e420de9467fd8051165d1243a72454bb6c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_PWLA_ICEPTS_ROM_AUTO_1R.v",
+      "sha256": "9f64878c521a98db2e436982e81b30a004700fc47b9c8b3c8067bcd9acb50404"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_PWLA_SLOPES_ROM_AUTO_1R.v",
+      "sha256": "e67366aa71eab49e60ad06afe55f77811a6462e313fd4a7092f8212fd95058b2"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_float_const_float_const_float_float_t0q_RAM_AUTO_1R1W.v",
+      "sha256": "679dfb6b7dbcfede5f8da0d2c9a61cfb0f991d7e163a3fa8ed9e450d41bca9fa"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_float_const_float_const_float_float_xq_RAM_AUTO_1R1W.v",
+      "sha256": "f7164bb6c5d077e4563fce5c18ed5d9107823adc603a618f37a0b96067de50ef"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_float_const_float_const_float_float_zq_RAM_AUTO_1R1W.v",
+      "sha256": "13ce661e23f9d28b34bbc2bb6907c60135be7cd58df11b8e6ad67e30e31f7028"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_1.v",
+      "sha256": "e5ecb16b3ab9e8c72b5579470a223ff3ad8f11f85a775ef4598cef09c48f8d57"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_312_1.v",
+      "sha256": "4cbf8a04d0206687083fbb03911135b4539bacfe34503465c90e67e75251a81a"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_312_11.v",
+      "sha256": "4131d2f5ba1fc5721b1989d13b1e7b6a1c4e3612408e010e4038c7cb8300f7b6"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_317_2.v",
+      "sha256": "b00f8fc78d076d0fe359ca00cffbe779751c51accbfffbd7c6748ee1d6745124"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_317_22.v",
+      "sha256": "1032210a285e65b9db7b7d91cd08d825b9da1ee74826d0a92101c9a7666844fa"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_325_3.v",
+      "sha256": "9fd6ee13283afd958fe7c979dec39346e0e608ce0c37915c4dc3df498af10889"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_325_33.v",
+      "sha256": "275d101d2fd22739263d25ca700d10664e258c8a038fe05bdee3f0a6fd0fba12"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_342_1.v",
+      "sha256": "767dc576229a2995121d750d52db211a5b16f1d75a2c2b4c7a662f786944bc06"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_348_2.v",
+      "sha256": "a7e0416a12b5252bafb1eb349006640889206aabd3cb74603585b828f4d47535"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_353_3.v",
+      "sha256": "244cf66e52b44e0703990990a8317ad8bc327fade664e09dce2d3e2045613ceb"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_358_4.v",
+      "sha256": "8ff46490c223da3d2e89aa71949fb1d52fa038e7794d0226a9e98fa8aaca668a"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_358_4_MB_BIAS_IM_ROM_AUTO_1R.v",
+      "sha256": "ce3ff89b44cb105c937a4c4303a938598dee0f6287a73e6a8e3dd8e4656b24ef"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_358_4_MB_BIAS_RE_ROM_AUTO_1R.v",
+      "sha256": "eb8102c701b2ece167caf8c73c510da86c05c62d9df2b584d975c59b362a2423"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_433_1.v",
+      "sha256": "9018d94fc4aa5373ee8a5bbbf9bac0a0f9a464dc6f22e2bef10545ae7547a5ee"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_443_2.v",
+      "sha256": "0d6ebe7a72d66f45fbadca6726cbb1702416c23f351df11da7ece56c03e3f918"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_457_4.v",
+      "sha256": "5c74830b9fad08a277eca25b7034a9155fcc2dda05bd5111b21287e49dc9c078"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_470_7.v",
+      "sha256": "7a2e2cabe9773f117538cbd854a6f56cb9249615b24f62eaadb25318c3f29c1e"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_470_7_MF_W_I_F_ROM_1P_AUTO_1R.v",
+      "sha256": "bb4bc6092fde4da9ac04bf07cde6cc4bb22b83a1e8fcf72cf8afdf239982c025"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_470_7_MF_W_R_F_ROM_1P_AUTO_1R.v",
+      "sha256": "3686c782883715339cb3a144b1fb4040ef11710747c4f9480ce113ccce529929"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_501_10.v",
+      "sha256": "2ef038d8a386c244f049e517764c67030220bcd348f2f2888dd5f9518a893f6a"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_501_10_MF_S_I_ROM_AUTO_1R.v",
+      "sha256": "ebab91f5cb40c9bbb4fed190644435e049915bc08596a45a2d18e4cb8836b6d4"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_501_10_MF_S_R_ROM_AUTO_1R.v",
+      "sha256": "9ce05223998e791d2a7b86975574c3cb76b747295fdb7bab4c9642f43a5df526"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_515_11.v",
+      "sha256": "097249b3ea12974dd0c300e3ae44d51eed536312bacd28d9cf76d8fe874eb19e"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_527_12.v",
+      "sha256": "21f243fa205e5e1612ca8b897734e75380093893de3400263e884261b9a36b51"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_527_12_CIN_W_F_ROM_1P_AUTO_1R.v",
+      "sha256": "a4e8c57f32f99cb6bd02f1add898b82dce9ab567afd2e566693802a9bdc40925"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_553_15.v",
+      "sha256": "512a215b264a0d50afb5dfb132dd65a7723e36cbdb7d090bef8bd573203c7817"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_553_15_CIN_B_ROM_AUTO_1R.v",
+      "sha256": "bac36437d20b0324acfb60c45e6a13d2c0e3ce5c5e18b6b2be5e17309ecb6c8c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_553_15_CIN_S_ROM_AUTO_1R.v",
+      "sha256": "4b9ee60ea047c2c7d633d915a5756b16362ce34be91b442b958b9acfba9e359c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_561_16.v",
+      "sha256": "7599858fb7f5e2681cfa5f6ed1682786bc15fc0118d41449fe84c64c07abfb7a"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_569_17.v",
+      "sha256": "f7e1e226fe56af8984a00276763f8e58ff1a2718286d72a64e11b7bcbac2b9cb"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_569_17_CR0_W_F_ROM_1P_AUTO_1R.v",
+      "sha256": "fb76703234ad7faa88bfc1b8ade8e0f0caf12db28dd0da82fc5ab3b85ec36ac5"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_594_20.v",
+      "sha256": "ce87c782b2fb5f215237a4e9c9fe1f2eb981945aa385ffc1bba6c88c340fb715"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_594_20_CR0_B_ROM_AUTO_1R.v",
+      "sha256": "7a321e92eee258449542c0311b5d2a9162dbcfe6aad7ec79e628b545176f208d"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_594_20_CR0_S_ROM_AUTO_1R.v",
+      "sha256": "ba162685f83e143b40247d03c746b8946c5405169141ab5e4601cbd77d108b7e"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_602_21.v",
+      "sha256": "4a49cb56abc73473988ef2dd73c2bb14855a94d9fbb02713d5ba1ece34b6ef82"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_610_22.v",
+      "sha256": "358b9bce97afca96f71ed386b3e72eb0514b51cf953a2daa1344288110a97bef"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_610_22_CR1_W_F_ROM_1P_AUTO_1R.v",
+      "sha256": "e9bbed30a98e3af956f37cee77e7d9c4e85fa5b7efdc88f7a3c4cf36049ccefb"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_635_25.v",
+      "sha256": "98247f8fd509746c93129a534000065d705a2e9d73d121c874cd71a569d376ab"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_635_25_CR1_B_ROM_AUTO_1R.v",
+      "sha256": "7763b4c7e5ac3bba4343fcd7e4045871f400e06794aed238bdc1de0f35207c69"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_635_25_CR1_S_ROM_AUTO_1R.v",
+      "sha256": "9c9464afbbe78898ef7a047a6071c29215fe40cd730f62769a4a66a3b4fe1fde"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_643_26.v",
+      "sha256": "9d5f0759ff3e840a71f783fd261531359133cb86b66646a52899a501bde63a78"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_652_27.v",
+      "sha256": "fcc2de290eb0aeb1a5d58325fb5e1c2b6fc6a627c2d7058bc76684039e01b7eb"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_652_27_COUT_W_F_ROM_1P_AUTO_1R.v",
+      "sha256": "e429e1e5ee9b130944ba972ce0325f8044ef4495d3fe2531226546a968942c28"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_678_30.v",
+      "sha256": "1fcaadc50d8c528d2f787ac18e566aac5eaa0bb5bab2c9e2253d7a8788902242"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_678_30_COUT_B_ROM_AUTO_1R.v",
+      "sha256": "a39373392e9aa8e1d5f393011bcc570a4f3bcba6414fb3a7325f426fab12459c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_678_30_COUT_S_ROM_AUTO_1R.v",
+      "sha256": "2a3382573ca86ff986f712b5ab6fbf9091badb25bbbb8e8f3ccb91e984a2ae15"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_686_31.v",
+      "sha256": "9544304e3d5c5b0892556ac87c9d124f78426ff781a5a1bf15be3256eaab0496"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_686_31_LUT_RECIP_ROM_AUTO_1R.v",
+      "sha256": "783977b7f68e42755b7f70c08e65570d98250889b2b03ae8fbec7c648f8b606b"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_724_34.v",
+      "sha256": "5bbf38981c170eb0e81fcb19b6b6cbe9a5adcee2d793c6325b1d7e8901cf437f"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_724_34_MB_W_I_F_ROM_1P_AUTO_1R.v",
+      "sha256": "1abf10f2afc305e016bdf7fb9e2cad3df62acadf3234ebaa39c493cbe4f7bf58"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_724_34_MB_W_R_F_ROM_1P_AUTO_1R.v",
+      "sha256": "4afb2384bc46b7c4edb5e5519999bf4f008d072a165ba122b992f407638a8cfc"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_755_37.v",
+      "sha256": "673200558b0947e0d52039677197eec146dc8ea5c948273920ed288de2d992cd"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_755_37_MB_S_I_ROM_AUTO_1R.v",
+      "sha256": "a4386569c29876752d093f5b0ee9efce9e7bd8973abddeac33f39c6f52a95771"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_755_37_MB_S_R_ROM_AUTO_1R.v",
+      "sha256": "52a9ad9c12a9430612073f341c6ffe17ab2ce5159ea8f358fe231c0649d106f6"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_782_39.v",
+      "sha256": "de4ba71781edb3437c7e02fa24dbbcbe7d47076cc7044baabd823866845a3f36"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_786_40.v",
+      "sha256": "eb5e488c9c0f02c883c1858de6e04b19771746addd2a81494b9700abd6f04ba7"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_814_42.v",
+      "sha256": "0c3403887d91840680fea5e2de321d38db3c92feb4e9bec0c4dfd150fcbf4e9c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44.v",
+      "sha256": "fa83fe88b692976c91cfd95f71a6c9b358569f5c0b4e244bf43a19fe09adc3d6"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_B_BIAS_IM_ROM_AUTO_1R.v",
+      "sha256": "e16dc3070f410c0907b17ebf005a282960d04b9e796b2c4d9e9d8f5ef192ef20"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_B_BIAS_RE_ROM_AUTO_1R.v",
+      "sha256": "6af13967b5652c56e3972d68c87b4e8d7171ea486a6be9eb83cf85cd0bbe1275"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_F_IDX_ROM_AUTO_1R.v",
+      "sha256": "1bf95f31e4a73fb68ceb32f5cd63a5e4f5aa65843581c3d3c45fa4d09e376080"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_G_QI_ROM_AUTO_1R.v",
+      "sha256": "cf86cc7423def04f165e786d21c6d908185c001a93fdb0acbc4014fe7df5222d"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_G_QR_ROM_AUTO_1R.v",
+      "sha256": "fc3e1323823cbcc66b78700f1adfea9e913d49c562c7e7fe23ddf7304ef619a2"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_K_IDX_ROM_AUTO_1R.v",
+      "sha256": "5efd0485214bf2e385e5ffa786f59208e395974c08b1490cd637ef43492f2e9f"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_sitofp_32ns_32_6_no_dsp_1.v",
+      "sha256": "f89033bb1bf36e65c12a668d315782bc122fac420aecb499b14fcc9c4d3bde5f"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_sitofp_32s_32_6_no_dsp_1.v",
+      "sha256": "64136849d6cb956789cca792096b8c45ab833d932673bc51c59bf0a41c000f94"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_Tqr_RAM_AUTO_1R1W.v",
+      "sha256": "35fe7659734d585e6c39f9bddbedddf31e89df5e818b81505400176cfd808af0"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_xr_RAM_AUTO_1R1W.v",
+      "sha256": "afd271adaf01a4f15957051ded94d3783f574f975283b7fad920f34695380d70"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_yqr_RAM_AUTO_1R1W.v",
+      "sha256": "a5d3a7fadc232e6c575fd06f08c279bf798c7e52d6fa3abe02198e7af1cd4c86"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_brqr_RAM_AUTO_1R1W.dat",
+      "sha256": "965c3eec09ba77d547b0df8ca1b5df0de57d81f1562230b75e1b7f9228d30baa"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_cin_sum_RAM_AUTO_1R1W.dat",
+      "sha256": "02ced8ecdfc67d01cdf61ba4a671550babcce818f7da70423b94d967a2aa4e7c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_cout_sum_RAM_AUTO_1R1W.dat",
+      "sha256": "034b74fdd029da8833c7a03d0524d7e6e096175d2f978dec3373677e0d403b45"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_dXr_RAM_AUTO_1R1W.dat",
+      "sha256": "b04501064652715342346791af9527096db2bfd12466920167a63c3855a95e68"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_dzr_RAM_AUTO_1R1W.dat",
+      "sha256": "b04501064652715342346791af9527096db2bfd12466920167a63c3855a95e68"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_a0r_RAM_T2P_BRAM_1R1W.dat",
+      "sha256": "b04501064652715342346791af9527096db2bfd12466920167a63c3855a95e68"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_TW_IM_ROM_AUTO_1R.dat",
+      "sha256": "17f87a42692d781887894e5579dd335f991c0bd8da0dcb2c87dd7409be8d89e1"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_fft64_TW_RE_ROM_AUTO_1R.dat",
+      "sha256": "58d49a4a7d383986fef6c40aecd60659dfdce2aaad820209b2b3d670e168786d"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_Fqr_RAM_AUTO_1R1W.dat",
+      "sha256": "fb4811c09e161d27a2a4def9f51dab9be47d4650c61b5c9580e8473a0795e5c9"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_Hoqr_RAM_AUTO_1R1W.dat",
+      "sha256": "034b74fdd029da8833c7a03d0524d7e6e096175d2f978dec3373677e0d403b45"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_hq_RAM_AUTO_1R1W.dat",
+      "sha256": "02ced8ecdfc67d01cdf61ba4a671550babcce818f7da70423b94d967a2aa4e7c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_LUT_RSQRT_ROM_AUTO_1R.dat",
+      "sha256": "6b495a0ecfdc55b1f7bb8362583cb86a2e1f1b7e9864a02a946ac2fcbe6a7882"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_MF_BIAS_IM_ROM_2P_LUTRAM_1R.dat",
+      "sha256": "cd18a15bbc8becca353efbacbf06154093856b77f5a397a61883415126dbf921"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_MF_BIAS_RE_ROM_2P_LUTRAM_1R.dat",
+      "sha256": "4c1d273cb60429150309928fccaedaf8f1c8b892e125b45210021887ecfbd17b"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_PWLA_ICEPTS_ROM_AUTO_1R.dat",
+      "sha256": "09464f9b71a8cfe866647e39ba77766a50639d99221cad0571fe6277b51a8abb"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_PWLA_SLOPES_ROM_AUTO_1R.dat",
+      "sha256": "0ac5a70a3e8f7824c39a5e54eebd8d41531baf50cb52c5492c32e174e58307bc"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_float_const_float_const_float_float_t0q_RAM_AUTO_1R1W.dat",
+      "sha256": "1f486e433deb7b90860e083adaba96870234633d8185a81148fcd22f9d7d1515"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_float_const_float_const_float_float_xq_RAM_AUTO_1R1W.dat",
+      "sha256": "a8e9b0ed7251493773525e232331c6caa1168aa23f19f630c9a14afb606468df"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_float_const_float_const_float_float_zq_RAM_AUTO_1R1W.dat",
+      "sha256": "4517d3b8d4e2390628ba4d61ff87ece59695583aa92ae68a9686329be139650b"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_358_4_MB_BIAS_IM_ROM_AUTO_1R.dat",
+      "sha256": "affea4332236e8637d30351cda88a5a3f88c2246c78da7b3d1b8297efb761783"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_358_4_MB_BIAS_RE_ROM_AUTO_1R.dat",
+      "sha256": "ff4d5122615af3693ac1939b5e707462f161e265db75108065a24f1833d8b95d"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_470_7_MF_W_I_F_ROM_1P_AUTO_1R.dat",
+      "sha256": "2f4e1424f748384f1263a744ec9ffd5a619e503b69f2b37e0cc640af8b71c61f"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_470_7_MF_W_R_F_ROM_1P_AUTO_1R.dat",
+      "sha256": "e1fab7008f0157f9d82119ed84ca72cad82e4ef097f4d4d770f321adcf2bc3c6"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_501_10_MF_S_I_ROM_AUTO_1R.dat",
+      "sha256": "322c43bce8d205173696c9888a889230a4dcf6aabfe83d51cd6097d2d2e6811c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_501_10_MF_S_R_ROM_AUTO_1R.dat",
+      "sha256": "7470b2fbd2f998495ea1e26a6a48e854c87a025a38ef89708969e1ca1702f1d2"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_527_12_CIN_W_F_ROM_1P_AUTO_1R.dat",
+      "sha256": "09129d7ca224dd98fbdeec486b0113e2a363fa6bfd7a2d2491a94095ca9e9bae"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_553_15_CIN_B_ROM_AUTO_1R.dat",
+      "sha256": "395bc37f5d9612ff80d22a0cd701354cfb5a147b5c626d21a535698d085013a8"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_553_15_CIN_S_ROM_AUTO_1R.dat",
+      "sha256": "c9a72d9041f2f0a73f6d53862dbdb45e70949bff2ebed94efa17336715094660"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_569_17_CR0_W_F_ROM_1P_AUTO_1R.dat",
+      "sha256": "e7170d9af1bededc27864e7490c0b80bb77b932ac9f5e4d4fdb64aff7f2d200c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_594_20_CR0_B_ROM_AUTO_1R.dat",
+      "sha256": "6e7bb851f34d161946aeb28ac26aed9530290daedb0699107cf39848bc9dce20"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_594_20_CR0_S_ROM_AUTO_1R.dat",
+      "sha256": "491d6e7aeb42943902268cadbcc47a5834b55aed9dc53614393f2c9dbe0a8877"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_610_22_CR1_W_F_ROM_1P_AUTO_1R.dat",
+      "sha256": "3ed652555299051a7bb2153e047985f4508b1a16b548fdcb7510ad95ec0e1986"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_635_25_CR1_B_ROM_AUTO_1R.dat",
+      "sha256": "a4f226fac97214db0c37d5367300099eb155d5042cdd0e16747e5a6a9daa70fa"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_635_25_CR1_S_ROM_AUTO_1R.dat",
+      "sha256": "d10a3c3b9ec7f80c369055c2681a71e40061b1cba051ca71097b826bf931c877"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_652_27_COUT_W_F_ROM_1P_AUTO_1R.dat",
+      "sha256": "a6d8efa63a1d4fb089043855bdb129ca6a2ad8839ff9b3009533c74dd660dc88"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_678_30_COUT_B_ROM_AUTO_1R.dat",
+      "sha256": "4106df5de05fa8d6f821b4bf8c447b48c22b35a81067c3ca796f6096be4505de"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_678_30_COUT_S_ROM_AUTO_1R.dat",
+      "sha256": "169c6212d1c8a4943ee08441fe8f09ca76cca2a14091c09cbe77e608447c081c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_686_31_LUT_RECIP_ROM_AUTO_1R.dat",
+      "sha256": "2387994a5456c83fa1ac182e7a4055bcab2a8eaaad35652f864776c841c86a9c"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_724_34_MB_W_I_F_ROM_1P_AUTO_1R.dat",
+      "sha256": "6f3e3d37bbcef63ed4bc7cc04e3d920175a3f5ae15512ec584c7060d03dd4b16"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_724_34_MB_W_R_F_ROM_1P_AUTO_1R.dat",
+      "sha256": "39610c5d69a7ba2babc9d3930e9648310d28d5779149ce17e2ec67c267d6e252"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_755_37_MB_S_I_ROM_AUTO_1R.dat",
+      "sha256": "eea62f9751a2001b137ce88b65061921b529890ff1e34ed116b983c23e119b22"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_755_37_MB_S_R_ROM_AUTO_1R.dat",
+      "sha256": "2058c5a470e3997fa0a330ba51c17f72b1dee6a3aa3dcf071f916f0f6a3ad1f4"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_B_BIAS_IM_ROM_AUTO_1R.dat",
+      "sha256": "1a702b0846e63f3fe3df2782cffce74d7b86ec5028df37f0babe0fa500d0a406"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_B_BIAS_RE_ROM_AUTO_1R.dat",
+      "sha256": "539bccb23338002188fa5a346ba59f6ad6c0eed0c801e5a520d306251e5235fa"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_F_IDX_ROM_AUTO_1R.dat",
+      "sha256": "68ff23405e22a3e8bfef96c56abff9d760b28b1264db09965056868fca411ec2"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_G_QI_ROM_AUTO_1R.dat",
+      "sha256": "ebe4a46cdc66694837670dd7fc500f82bd12113f63c0dfcdef6a206ea579c349"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_G_QR_ROM_AUTO_1R.dat",
+      "sha256": "d4ad9fb9b6ab35578f74bb4beded39e92ec676dad940d4f379630a577848c6f0"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_receiver_slot_opt_Pipeline_VITIS_LOOP_830_44_K_IDX_ROM_AUTO_1R.dat",
+      "sha256": "41f39aebf13a0fb2b2c6db0092ebe71edc3c08fd35036c3a4e59bb87b394eac4"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_Tqr_RAM_AUTO_1R1W.dat",
+      "sha256": "fb4811c09e161d27a2a4def9f51dab9be47d4650c61b5c9580e8473a0795e5c9"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_xr_RAM_AUTO_1R1W.dat",
+      "sha256": "9d4c71460312dc5e9475c336b4cfb29ab917bb84d7491ecd61ecd32db59625bb"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/verilog/receiver_slot_opt_yqr_RAM_AUTO_1R1W.dat",
+      "sha256": "965c3eec09ba77d547b0df8ca1b5df0de57d81f1562230b75e1b7f9228d30baa"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/ip/receiver_slot_opt_fadd_32ns_32ns_32_5_full_dsp_1_ip.v",
+      "sha256": "31c2b65ffcde485d398d795c2f67293a24f8dc95cefc4c3985825a6de48fbace"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/ip/receiver_slot_opt_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.v",
+      "sha256": "2a5122a816478ba0a9b0186b2aba5042c8ec50e3c509a279687cb2a7a762d5a6"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/ip/receiver_slot_opt_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v",
+      "sha256": "c1b0870536d8fe4d5130eee6f71515877f58f1834153cda7366fcf47cc0ab2bc"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/ip/receiver_slot_opt_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v",
+      "sha256": "fe83a9ef6eeffb4a1594b92b94d019b9ea8f3b18ca96f8a1afddf4a2e45ae8a9"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/ip/receiver_slot_opt_fmul_32ns_32ns_32_4_max_dsp_1_ip.v",
+      "sha256": "f22c4deeb44975922c880f7131c77bacecc6c71e4d21b8e15e24bb616f2e788a"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/ip/receiver_slot_opt_fsub_32ns_32ns_32_5_full_dsp_1_ip.v",
+      "sha256": "4f39770594347ed4555962d61fa74f4967c632d216742ee92d11f920c386e121"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/ip/receiver_slot_opt_sitofp_32ns_32_6_no_dsp_1_ip.v",
+      "sha256": "eae5d07e4c47249af4dc8b2f63f93fa950e5a6bfa2a5ac594b9234a6ddc0cbf7"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/hdl/ip/receiver_slot_opt_sitofp_32s_32_6_no_dsp_1_ip.v",
+      "sha256": "8447ac82881ea1aaa632511e65d06af0a515bd4b38604eea85f210b7f49b5c0f"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/proj/zed_selftest.gen/sources_1/ip/dccn_hls_ip/sim/dccn_hls_ip.v",
+      "sha256": "9d6e0851538362c3d767cb344d74fe9d5e9cb97d3f230390e2e8abe85100798e"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/rtl/zed_selftest_top.v",
+      "sha256": "34571983878981b5bc17c49e49ef02a674b6e53832709c6b99b1124e3afc8cf9"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/rtl/pred_roms.vh",
+      "sha256": "5819fe04ddaf07af6928c6463eadbe00320613cdc04a32186f40f80e8159b30e"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/constrs/zed_selftest.xdc",
+      "sha256": "697a202ca5ab4f67d21543151c12caf068f317cfee3380a80e40f80975aea0cb"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/tb_same_image_system.v",
+      "sha256": "e21a0a45d0d7b04d1de0390bfeb3ae9a357fc2f005013bc19b9efa1c729398f2"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/build_board.tcl",
+      "sha256": "87ba92d550de5ac57fc30a848285d1118f30c8aada55808e67fa703e160349a6"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/run_integrated_xsim.py",
+      "sha256": "81f86dbd17b2875574a4ba370cac4b5feeff7a842941414b1b785c0bd3dce45a"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/data/yim_s0.mem",
+      "sha256": "23cba9f750d16660aa51f45e7900087fa123cdefa1a10501fcf20c287eeb10d5"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/data/yim_s30.mem",
+      "sha256": "8642722a0f7a264ef64b52e5fa02ea2076294f2180c36c93cbd568be0d8bed25"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/data/yre_s0.mem",
+      "sha256": "64da09369d67eafc1aadd5fbb0271cf4ddf6ff9b149f4f1fac24e1cd4898c768"
+    },
+    {
+      "path": "e5_hls/experiments/local_a12_20261002/board/data/yre_s30.mem",
+      "sha256": "813809327f6b7926dba7e9b570a4f4db447512727414c144b1da9b5d169e223e"
+    }
+  ],
+  "derived_ip_changed_files": [
+    "hdl/verilog/receiver_slot_opt_mul_8s_8s_16_1_1.v"
+  ],
+  "bitstream_sha256": null,
+  "bitstream_scope": "Concurrent physical build; bind final bitstream hash in closure report after completion.",
+  "programmed_fpga": false
+}

@@ -1,0 +1,57 @@
+{
+  "condition": "b1_longcp_seed1_EVA_24dB",
+  "slots": 2000,
+  "bits": 640000,
+  "stimulus_sha256": {
+    "transmitted": "334174969b9261f26fd00207d591af86c6a76e7061b89cfbaf73691b34f7de80",
+    "labels": "87571c45b36f62ba8800612bd6345a7ff6c048a5b9f31b058b56360e49462869",
+    "received": "1940ac4f4bb3545c7597bf9522db79a19873dd188b34e9d9efa328469df06857",
+    "taps": "7ac443066d2880f4c868ade25b4b7b94329573d1cab251df40945dcb818389a6",
+    "noise_residual": "7590bf3a6b59535ee6872ed866237daabca78a8e695c9049b00418fd60725ab4"
+  },
+  "errors": {
+    "torch_rev_t": 2232,
+    "torch_a12": 2044,
+    "c_rev_t": 2231,
+    "c_a12": 2044
+  },
+  "c_vs_torch_flips": {
+    "rev_t": 1,
+    "a12": 0
+  },
+  "c_a12_vs_c_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 2044,
+    "reference_error_bits": 2231,
+    "candidate_ber": 0.00319375,
+    "reference_ber": 0.0034859375,
+    "candidate_minus_reference_ber": -0.0002921875,
+    "slot_delta_sample_sd": 0.0029251666751456133,
+    "conditional_slot_bootstrap_95pct_ci": [
+      -0.0004312890625000001,
+      -0.00016875
+    ],
+    "bootstrap_reps": 2000,
+    "bootstrap_seed": 3345767802,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "torch_a12_vs_torch_rev_t": {
+    "slots": 2000,
+    "bits_per_slot": 320,
+    "candidate_error_bits": 2044,
+    "reference_error_bits": 2232,
+    "candidate_ber": 0.00319375,
+    "reference_ber": 0.0034875,
+    "candidate_minus_reference_ber": -0.00029375,
+    "slot_delta_sample_sd": 0.0029241748984830678,
+    "conditional_slot_bootstrap_95pct_ci": null,
+    "bootstrap_reps": 0,
+    "bootstrap_seed": 20261001,
+    "resampling_unit": "one common simulated coherence slot",
+    "scope": "Exploratory descriptive interval conditional on checkpoint; not training-seed uncertainty or multiplicity-adjusted inference."
+  },
+  "npz_sha256": "dd7cc16c7f14b5abbab5791a9ed993a3109780e96ea086bda439dfa451879635",
+  "elapsed_seconds": 3.520722600000001
+}

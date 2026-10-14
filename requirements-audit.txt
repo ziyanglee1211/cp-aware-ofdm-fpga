@@ -1,0 +1,2 @@
+# Recorded-data audit; no GPU, training or vendor tools required.
+numpy==2.0.2

@@ -1,0 +1,26 @@
+{
+  "unique_slots": 16000,
+  "unique_bits": 5120000,
+  "total_errors": {
+    "torch_rev_t": 64455,
+    "torch_a12": 62536,
+    "c_rev_t": 64462,
+    "c_a12": 62546
+  },
+  "ber": {
+    "torch_rev_t": 0.0125888671875,
+    "torch_a12": 0.0122140625,
+    "c_rev_t": 0.012590234375,
+    "c_a12": 0.012216015625
+  },
+  "software_corrected_net": 1919,
+  "c_corrected_net": 1916,
+  "retained_net_gain_ratio": 0.9984366857738406,
+  "c_relative_ber_reduction": 0.02972293754459992,
+  "c_vs_torch_total_flips": {
+    "rev_t": 61,
+    "a12": 42
+  },
+  "conditions_c_a12_improves": 8,
+  "limitations": "One fixed checkpoint; same prior confirmation inputs, not a fresh cohort or statistical equivalence claim. Native C mapping, not RTL on all these slots."
+}

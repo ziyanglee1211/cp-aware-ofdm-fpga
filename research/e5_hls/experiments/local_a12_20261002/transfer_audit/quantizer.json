@@ -1,0 +1,9 @@
+{
+  "samples": 116393,
+  "mismatches": 0,
+  "scales_exact_float32": {
+    "qr": 0.0028686323203146458,
+    "qi": 0.0032066460698843002
+  },
+  "nan_contract": "No NaN support claimed; all tested model outputs must be finite."
+}

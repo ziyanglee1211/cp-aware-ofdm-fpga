@@ -1,0 +1,876 @@
+{
+  "status": "complete",
+  "protocol_path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\protocol.json",
+  "protocol_sha256": "e30afeee6c43aa170ca6b3765c42f5a3d66b4b5593c9d171da0f0ab78ba5860d",
+  "evaluation_manifest_sha256": "bc9ccc9e3be6dbce3c6aecb5e9a8c44c9d2875e7920ab3e0f97fda46b99ffa72",
+  "independent_audit_path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\audit\\audit.json",
+  "independent_audit_sha256": "bff8e5e01f18d64319760cf051c8e2f3123eeb383bed296ad30a1f3fae18ba8b",
+  "independent_audit_status": "pass",
+  "summarizer_sha256": "b86f3f796d963e836fd36f0a8bd36edb599a954ed0e9831fc6ae3b1a469ad5d7",
+  "input_bindings": [
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\protocol.json",
+      "sha256": "e30afeee6c43aa170ca6b3765c42f5a3d66b4b5593c9d171da0f0ab78ba5860d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\manifest.json",
+      "sha256": "bc9ccc9e3be6dbce3c6aecb5e9a8c44c9d2875e7920ab3e0f97fda46b99ffa72"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\audit\\audit.json",
+      "sha256": "bff8e5e01f18d64319760cf051c8e2f3123eeb383bed296ad30a1f3fae18ba8b"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_ETU_12dB.json",
+      "sha256": "706ca202b3ab84d132713eaef7a52dc8c2c65595110a19e821784fa78d482eed"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_ETU_12dB.npz",
+      "sha256": "4deb80c1e6eb6945db1c64951424ef6dfafeccf5a35a8a575c6924d5931ba69e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_ETU_16dB.json",
+      "sha256": "c37ef807d83ccf7fa2a1078cc6cf5e892a25c4c71a506cec14e4559a43253d16"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_ETU_16dB.npz",
+      "sha256": "2876e700ea7743474090523c0f809e48f2eeec248f6903c7aaafbf7068d835c1"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_ETU_20dB.json",
+      "sha256": "9ed40d49aa85f8a4db1deacfa0de3267851de601b3016f46f57437d23f2608d0"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_ETU_20dB.npz",
+      "sha256": "e9ad18a069d7feb00e413bd82280a698e0f76f13301456f4c0c0f01f6cd9b934"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_ETU_24dB.json",
+      "sha256": "097654aad592e5eaf4cf8d1e8d87142084765e9efbb10e54039a75237510228d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_ETU_24dB.npz",
+      "sha256": "25bbccf324234e505c447bd4d57e51a151796095825f97bced16001d9c34f093"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_EVA_12dB.json",
+      "sha256": "db1e33c207eebeff0a7fae993a7e1a70a1af134efc2d51c087e7f184f163f43a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_EVA_12dB.npz",
+      "sha256": "c9bae7432bd64e5d89daf2787f625b12a13c846ceb0d99c3443e888edfe5cc6f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_EVA_16dB.json",
+      "sha256": "3e66b9581122d233d6cfbf140285a9de2b5343f81a3deaedd8d9c05d8a3b0e75"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_EVA_16dB.npz",
+      "sha256": "adab4fec52f4e246c1bb09b3c372b96efaf69844b3368ea295631bc92d371247"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_EVA_20dB.json",
+      "sha256": "e3bfae59125d9044cc55df1a4c44231eb65f007efccc623ca38cfcd8e14e51ab"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_EVA_20dB.npz",
+      "sha256": "35b0e40b99f3296bb807e3dea96abff5b1656d56ae1552bde346cbf9f9a740bb"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_EVA_24dB.json",
+      "sha256": "21df63e00e55dd67c75be51c59401a722abb41d5ef22cb2b794459e3b6088393"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed1_EVA_24dB.npz",
+      "sha256": "550999825ba754e5f3afaabed12bb6e4a62e88befea1b4a52acccce46c58c1ed"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_ETU_12dB.json",
+      "sha256": "f9c5983ce92047e87d73b172d887e0b8e0b7b37146716c16f7e710071caf6b4e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_ETU_12dB.npz",
+      "sha256": "038d5aa84663f0310d1f36e12169d70929bd11d1330ac910c0bb96641eb14d78"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_ETU_16dB.json",
+      "sha256": "54889776ddec8d61be9cb6dadcb12acf910beb5b1ba2ce1feb523c8bc82f0ea9"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_ETU_16dB.npz",
+      "sha256": "4db799bb7824f4fb2d226b11789ddb797ea7d6faee5e5b1f3a2874dd72eb334d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_ETU_20dB.json",
+      "sha256": "d433806ed814fdbd660fb181b877089519bcac5b59ecfe47a5be16f5d66ff157"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_ETU_20dB.npz",
+      "sha256": "9909a943a967dfd703ed4df533b0904da4bfdd3cd55e04869d7659fede4ea7e0"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_ETU_24dB.json",
+      "sha256": "e186181d4468520a8e2e350ddef01aeefc259755813537e20e422767470e2be3"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_ETU_24dB.npz",
+      "sha256": "bba4bb0e9ace57b3c812590cd3ddb3540489d9334a10b78f0326350a4f03e5ef"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_EVA_12dB.json",
+      "sha256": "bae75f00f5135c3bbd6ecbdc10f14adf27de92ac1e3d000c1b8e50060835d495"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_EVA_12dB.npz",
+      "sha256": "f90a2e8714cc347de4328f39f242d6799aa6a57a1e3c10b063b61082dc8b3ee5"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_EVA_16dB.json",
+      "sha256": "8c4d3be39017374f1e673ce0c911fa12815a119e503478f803768341eaeac83e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_EVA_16dB.npz",
+      "sha256": "a88b882719b96dc730e6c21351021577851395f3b0fa478f0973bcf12f029c5a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_EVA_20dB.json",
+      "sha256": "584efcde58c8f97cae926970223de2f9c3568ead91c2888f526bd22a5732b4cb"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_EVA_20dB.npz",
+      "sha256": "f1cdce34b2aa7d7c4d4655bf723bd9c8d13f7c6ff9cf8c5ad911b05aa6142c0b"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_EVA_24dB.json",
+      "sha256": "b51411b992c5f75cd1b690c490c65c893b28b33ce1893d59d64a1abfde1b2d41"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed2_EVA_24dB.npz",
+      "sha256": "b4834e1b5a214da0a80f9ce9c9773fe658c53e3b26159611b98356f76d4c229d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_ETU_12dB.json",
+      "sha256": "b6450fd4a4b5e844950973f04e21bb06c002167f7be1361457e8bbcf81e9f1ca"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_ETU_12dB.npz",
+      "sha256": "0222c1aa2200769b116928fe0a51c8c026bdd25575d8b457f3f263242aeaae0d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_ETU_16dB.json",
+      "sha256": "296529fdb5e043d7567dfd11b42eedc36353c650dc5a6c3cfbb57c7bcea712da"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_ETU_16dB.npz",
+      "sha256": "7a09a4cd6ef1fe2c0197402a1173340afb775ea117a384ff2987f7004900f592"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_ETU_20dB.json",
+      "sha256": "0dfb55e34d0cd789a8babd8af87cbc6d9bc7cff85b3db8ea42be61423fdcc4c1"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_ETU_20dB.npz",
+      "sha256": "87962aaac7a9a3ed82373b4393a4a09644fc69b343c2d4952c70fd1b7390cfc8"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_ETU_24dB.json",
+      "sha256": "eafbbe99aa49c410e2a36d35d85f0ae7b658fcae55ac126084c7ce4c31cd8eef"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_ETU_24dB.npz",
+      "sha256": "d9d141c842869d4cb350d4451568dc3ccb41adca54067936758737ff80887bdf"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_EVA_12dB.json",
+      "sha256": "2be1e9b60b74ee10be98caeb23ca71c6be6ebe3953dcc732494fd660e868f32f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_EVA_12dB.npz",
+      "sha256": "73b149830b8685b16f193ffad2c56ac407927dc85512765e6862405726464157"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_EVA_16dB.json",
+      "sha256": "18c115faa62fc047e8980c091eda471b95102220c81095b8493b5640b6fcd340"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_EVA_16dB.npz",
+      "sha256": "3e1b866acf2bd416be07bf87f38b9013569cfbd806a05f5cc4061ab7ed0fe1cb"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_EVA_20dB.json",
+      "sha256": "eae196707ad30f1b785759ce331e2560c4883e921593cb27405be6ecae67e996"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_EVA_20dB.npz",
+      "sha256": "ff3e88b410b1e9d2187e5302c6da543cb67cdf025a0a7102117561f4fce38d1b"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_EVA_24dB.json",
+      "sha256": "eaed29a028db0670bee2171bc209e4fac21e78c7da532b5377fc2f6e7fceeb66"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b1_longcp_seed3_EVA_24dB.npz",
+      "sha256": "2720955a262205ea9071273b77aa4ab852d1f39e176406c8d6d08ab76f88237e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_ETU_12dB.json",
+      "sha256": "15bf90869fa7b0e1bcf208aafa83b483921613669096b3b05ed83470d5b884ff"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_ETU_12dB.npz",
+      "sha256": "284a3d1d346c998696dc9b1c3dbcd1327716e41c0cb27b539415d9decb6ded73"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_ETU_16dB.json",
+      "sha256": "0845e2b3b30f832cb5f3782e9442f0e72d42a0d2fe27d62a3ba2dd65861d103d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_ETU_16dB.npz",
+      "sha256": "ad30dc695274c223e7cad1047c81879829e3bda7134a80c2cc754e181d0c16a9"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_ETU_20dB.json",
+      "sha256": "a89bb8fc0f2eae21d117e0b31ed673b46f6220fef1bbfbbfd633daec3ca4a5f7"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_ETU_20dB.npz",
+      "sha256": "82eb835f2a26562d87ee5ad73cd6b06c5f23534c0b8213243de93b27d346d03c"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_ETU_24dB.json",
+      "sha256": "c46cf318b9b24143968bd9e993c174395908f63b50c10b36fd2ce3a196900278"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_ETU_24dB.npz",
+      "sha256": "a1df8bd76d32c74bba6e5b0b5cff195c207a318faea8c086b66c65cbfefa6517"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_EVA_12dB.json",
+      "sha256": "e6a6644deaec5e30daf63353a032b4e3d18d9fa44d2fe4005fc0bbe7a0b05f50"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_EVA_12dB.npz",
+      "sha256": "6f318e013643b54e165ee3a8174f6f87af2ecb4c4f036ad9324cdae27e2a3926"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_EVA_16dB.json",
+      "sha256": "725f0fd96a597adcbc16b6e23042748dc604130386c8570c144a87bba701fa3e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_EVA_16dB.npz",
+      "sha256": "89f5257330c1c36e11d9ed589db661e2f55cdbc4d5b599594a041f4cbaee2462"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_EVA_20dB.json",
+      "sha256": "d372fb900d79184c7e2051a97d1eba8f19baa4d9b2e9f7994588046d6cdf4bac"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_EVA_20dB.npz",
+      "sha256": "d6f695e905d73f850b2172e97c26818d6602bf48049087d5bdcd1d4c4b7eeda5"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_EVA_24dB.json",
+      "sha256": "717ddce27df8738530cbdb3c7ff4c533c087d46b972687b2a339e866c82c4f92"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed1_EVA_24dB.npz",
+      "sha256": "a5b9325800ff1c424fd30a7e53fd29ed94a749b8362f43f5368c71e2b9ecef9c"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_ETU_12dB.json",
+      "sha256": "29e15dbfe2eb2ee415bbbb39fbdbd150bd07596089f1a51f646abce8ddcd134a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_ETU_12dB.npz",
+      "sha256": "710d2fc083ea235f0b0ecaabe44f7a654d9ff5cb3a8fbca96ba93e17ca97adac"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_ETU_16dB.json",
+      "sha256": "bc7643e43f9725fa4ba5a9abd16cad5e9d7ad5e66de4b2ce1c351b8d75ba8cd4"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_ETU_16dB.npz",
+      "sha256": "80fee93fcedc9d6c607a93b7717ceaaf190533968de3fe9642fc7fc4ac4ebd5e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_ETU_20dB.json",
+      "sha256": "bf09130b870790fa3835b70981eab671a59c7f1b3573a2c3d094d7d4bbf8dfa0"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_ETU_20dB.npz",
+      "sha256": "d800a58b4e46e870345eeeebba7bfd4572cc7c9fcc4ce63d8c5cc426b00af82a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_ETU_24dB.json",
+      "sha256": "0f40b09db3b885c732d3b4bcf4c9cc5235f2a8acb93eadfbc7510d12380ccfc8"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_ETU_24dB.npz",
+      "sha256": "c077f873222e141ebd2ce437d90cf2b41ec278e737f66fa3512bdcc052019804"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_EVA_12dB.json",
+      "sha256": "7e241ed50d46001f4573b086fd4551ea89a90eb93bbd0d5e56f9ba2ee16d8a9c"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_EVA_12dB.npz",
+      "sha256": "b50450758c6647c3eb09050f3ff3c26d9f1d3812436ae768ffcfdd039a22784f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_EVA_16dB.json",
+      "sha256": "bbd2c3e9aa446d7c98fad7874f47a4e9bf10e20973f89d56b52548f3d914cbfa"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_EVA_16dB.npz",
+      "sha256": "f0d25512847fc5bc36d841155593c8dde3bfed9b39be8e8fe672f38f5795564a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_EVA_20dB.json",
+      "sha256": "3f68cd237a89d255d2c83b783326aac7bf11c2f849ded3f5ec003586f1a76a05"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_EVA_20dB.npz",
+      "sha256": "854d72ce0bf86f42fd042b814ad31b34c1f65f1135944c6f05a5623b282a4932"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_EVA_24dB.json",
+      "sha256": "2b8fc74fabe368c9ecc3580f43bb3c19c182eea7636c67794bd4f059ab84469e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed2_EVA_24dB.npz",
+      "sha256": "9721273345ed3f52b3629835fc2c382e2d89de09071e1f4639452b6b633d5802"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_ETU_12dB.json",
+      "sha256": "e5247bf01d48740ec34da92cc96d5b70de9e2c1f888d3ab17674f3a1a1971574"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_ETU_12dB.npz",
+      "sha256": "b78f55d794da80854f44f751cedfc97df28c0f803198ddf5ed7ff312cbdaec23"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_ETU_16dB.json",
+      "sha256": "4da9f474da0df88a088e89b761b44ba843efb02bacadc3d24231b43cda1ede6a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_ETU_16dB.npz",
+      "sha256": "dc086d6f4c644f4baa26b7ac90ebe91f12feff9ad1b8028307d5b6b792f64d4f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_ETU_20dB.json",
+      "sha256": "d5d44bfbbe69db84088f552305f7bc4c113cd38c8bdceeaea5588f57526c28a6"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_ETU_20dB.npz",
+      "sha256": "b6049a6684ba5509c03a997c79c4c520ac9099676c5989e910f2041dd8f9ea19"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_ETU_24dB.json",
+      "sha256": "29e814f2bcf86b4c5dd1bd0579d45d3a307ad5943d51fc8fdcb6f7aa1619ac41"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_ETU_24dB.npz",
+      "sha256": "0ad0b38692be8c1f347f5f829b8a7603090c62f377dc9ee93ec4fc2ec0651b70"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_EVA_12dB.json",
+      "sha256": "a7d9177360ad02399d4be9968277167d1253410ffa327d396a2e76192d3b20ad"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_EVA_12dB.npz",
+      "sha256": "77863406bc23b865b36550c9ebb9f97eca724e6d02cafc23a4f41a8a46767785"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_EVA_16dB.json",
+      "sha256": "6e66acf688d5cc6568eab8159b9e153858dc41cd20c2d3226f26fd2bfae3ab7d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_EVA_16dB.npz",
+      "sha256": "023b616481d3cbddf2ba38845fc3c53a0639cef643b3568256c81c3691eb57aa"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_EVA_20dB.json",
+      "sha256": "cec0b247d30d598e6f0b7536e32b1659052f9e9dcc057cc78faeb581315297a9"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_EVA_20dB.npz",
+      "sha256": "e975fe55935c2c524fda06b30e5bb582966e7def6e4a0ee87889473cd63110b6"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_EVA_24dB.json",
+      "sha256": "4e7a7f82c1dbfaccbec860ddac048c028d38d9af31eaba74be6ba9d0fab4fcd1"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_longcp_seed3_EVA_24dB.npz",
+      "sha256": "03344525ce9f327950bd72cfc29894ae812d6f242102530e8503cbf53acf65ff"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_ETU_12dB.json",
+      "sha256": "8a64c117fd2456ff774e8488a8eea3777f9fe3a7b319e733130cfa476b63ff1f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_ETU_12dB.npz",
+      "sha256": "50e08c250dbd3fa0923568e06b5a13d5285b1f905e323ccbbd80777a3a7c475a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_ETU_16dB.json",
+      "sha256": "d49056ac9719aee4634f2a1dec29aef1ee9aab9f82baa0d21764e76b355f7933"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_ETU_16dB.npz",
+      "sha256": "fd6ba6b89e5cb22b5c68df6cde060066e6a26ef166cfe862363d60fea19acb5c"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_ETU_20dB.json",
+      "sha256": "919fbfeac64464cfa5f632ee3a388232cfa096c83ac2199d817373407fa24a6c"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_ETU_20dB.npz",
+      "sha256": "60375baa94edd2eacfb4941de9833de483ab8e634ba898fae71f31bca69f9b75"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_ETU_24dB.json",
+      "sha256": "aca7f78cc45b59d3745ac1b500114f14fe5736736b5a7f20f7f049624f8281bf"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_ETU_24dB.npz",
+      "sha256": "8719ae058d12bc9005ffc2961acfd69776f485baef86ffb45637f05493471210"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_EVA_12dB.json",
+      "sha256": "77b5e2534da32799071eb708a1233c82917609722ad10f186ca5d55239237642"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_EVA_12dB.npz",
+      "sha256": "4a04aa783937efd6bc10f4a138f6d3d9982c1564a795ded888b825a1dec96058"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_EVA_16dB.json",
+      "sha256": "8d6ed84f80bbef0832db97da9455a6733ad52da8fefca20c9188a02e4f80cc81"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_EVA_16dB.npz",
+      "sha256": "5f37f84b2558cf62df7e819c1b3743f30c1fec57e63ca3af9d1277b5f2fdbd92"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_EVA_20dB.json",
+      "sha256": "aee998ab4fdcd7ca1e4c316be485d1e856d7f078055d0f3e1debc20a9b79612f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_EVA_20dB.npz",
+      "sha256": "ffafc38980bcc913c25249427256ebc14d0c54a96d528c563d825d99361ee1ba"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_EVA_24dB.json",
+      "sha256": "67d7994530122aed1f5d688d5f8bd57d890208716097f6be537801354382382e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed1_EVA_24dB.npz",
+      "sha256": "a31a8feb0f983f92766bcbe667ac1b670bf4981fbc5dd5981e4b42da53a031cf"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_ETU_12dB.json",
+      "sha256": "d95780db3cc218784ddca1401fbf8b4fdbc5c7c63c4e4b073eaf9731c964e2a6"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_ETU_12dB.npz",
+      "sha256": "bd9615ca5eba5ef3a702ef35654c4bdf420bee0efd7c7b90994b904e8f2d97fb"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_ETU_16dB.json",
+      "sha256": "2d72b7a8e57960fa05e125f8efd584936b72123c3dd6f5983e590a5c0382edf8"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_ETU_16dB.npz",
+      "sha256": "d9f144d6846b6696b1d16d6e0f7b957da6fca53f2fd1fc4646ed18f4c32d5cdd"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_ETU_20dB.json",
+      "sha256": "72d31c8f516455ba1db1e7014f57b64e57d38c74e1510b7baf600002cefd6657"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_ETU_20dB.npz",
+      "sha256": "bf58b8fb93dcd76181ea5c1549c9222d85068d9359775f5b3c43d139a02825f5"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_ETU_24dB.json",
+      "sha256": "7ebbb873b8fade18a7d56a82bfe5a2e8f66b2ef73178c1a3ed695807bfdaed47"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_ETU_24dB.npz",
+      "sha256": "f6cef22c70f7891a8d2e59785407e4f4cabc0325aeaca1de28df0ed41edfb9e5"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_EVA_12dB.json",
+      "sha256": "3faa078d6f2567cd0e84c3bff914b2053b5752f0af1b4f0cab6c4eed1f93ad5b"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_EVA_12dB.npz",
+      "sha256": "80c66c5cb367816093b0fe298b4f517c00fd2fdf8794d77ddf13ece9942a6685"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_EVA_16dB.json",
+      "sha256": "95e6f6cce005b12c2e96ebce823e5fb8823b499c6fe451ea748a7cdae7d4bfbc"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_EVA_16dB.npz",
+      "sha256": "8d076096e70b489b4abe0b2a18a566f89e5a66dd6e68d73294b5e41b2ca6966c"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_EVA_20dB.json",
+      "sha256": "6b671eb9673d28d182265e8036db06653ecaa104d915707fdf64e379eec0c3ec"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_EVA_20dB.npz",
+      "sha256": "2d5ed5653d904a14271641e44c9b2f3ca1f4238c80c4b1e9da6fc10139a20549"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_EVA_24dB.json",
+      "sha256": "8df4356bce82e5546b3d5712dd99aeb34fcfc30fb4820c19ac70723670eaebf6"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed2_EVA_24dB.npz",
+      "sha256": "f5e2b7bf1787f0eec352e42ccb49000805ba90ef06bfd7247eabf6c667a1b12c"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_ETU_12dB.json",
+      "sha256": "418907f5355846927615313194538dd53fb9181c8c5fa02a3df7dce47698102d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_ETU_12dB.npz",
+      "sha256": "a94d703c5782f1f1fe2c2b0bd7747bd973955e87955a528b8f760eac1fc62b3e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_ETU_16dB.json",
+      "sha256": "45a7b182fec01573854a3b74ed57fcabebdfdb189c9baaeb6c3c038166aa7b2d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_ETU_16dB.npz",
+      "sha256": "d0506f16b38624b7d77e7dfce7113a43d0e638dfd5545145d2ebd8c18a9ef5d2"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_ETU_20dB.json",
+      "sha256": "6c1757e4597dcae127a6514bd25f3fb60d080f8b06ad0735e2f1fb7cc3a16c62"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_ETU_20dB.npz",
+      "sha256": "d39f649735d4d2f94595117c5eebb5fba4fa1d624fc5a2334a0849e9a3ea2626"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_ETU_24dB.json",
+      "sha256": "799de30167a0695ce7514b37973c1c91d37020ad1f8918efab18f62d30a10e6b"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_ETU_24dB.npz",
+      "sha256": "da4717ec80b590002ea182b856478a69b66466ef252477ead1afcaf458d7f62d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_EVA_12dB.json",
+      "sha256": "ae6d7d260aea561e265a41ca1dc3399fa07e6ea7e8e403687dbbb6720287d0f9"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_EVA_12dB.npz",
+      "sha256": "83b1952c59d94aaf31c7dec332352231094bc652b67bfb79229838780e7b026e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_EVA_16dB.json",
+      "sha256": "0d01c6600ca5202fd3c93071d9c86185969ef203e63d06af5319328e0118998a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_EVA_16dB.npz",
+      "sha256": "f5c8c196761b20d69e311ab6a37c240bb792c6ce8aaaf59476be9ddb790a8992"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_EVA_20dB.json",
+      "sha256": "1ce4055bcdbd1f963f391cc0b1a077847c714545a1335f25e4604f0efc29b783"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_EVA_20dB.npz",
+      "sha256": "ba7f676e52e348b1cd6d74cd01ee5df607545ddaefa7ce0fd1b9a7dc0b8b64fe"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_EVA_24dB.json",
+      "sha256": "7b045e8274e113e9f0185b5855b4e7e7446cf5db5e13df32b619320c95f745c4"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\final_test\\b2_shortcp_seed3_EVA_24dB.npz",
+      "sha256": "f240cbe9d7e531b8e3e3e0201a95efc1e6acdb3163e1d54dc2add257eb59c6ca"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed1\\A1\\manifest.json",
+      "sha256": "46e0c54d539625822d4e5a79e2be65984abfe1eb9906fba41532fac5b7e4b566"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed1\\A1\\training.jsonl",
+      "sha256": "1a0ddd447ee9ca9b1d9aeff4c9f879fa8edeff6c9542a9b28318e138e846afc8"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b1_longcp_seed1\\A1\\final.pt",
+      "sha256": "3ae2e2a4be27e9479e3ce48ceb3f140901ef8a2dd2d52e2661016533034efbed"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed1\\A1F\\manifest.json",
+      "sha256": "17393b2a21e872050e15848c395112746eaeb8764f3984e5c05ecf7121e28bda"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed1\\A1F\\training.jsonl",
+      "sha256": "e480bc0dba58798d187de029e4c9b2d2dbb60b7f6af4891f938cd1754cca6df7"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b1_longcp_seed1\\A1F\\final.pt",
+      "sha256": "e8bb384aa7f0e4529a847e631ed5d84d9b2223521a9bfcbea4febf16f6049040"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed2\\A1\\manifest.json",
+      "sha256": "87a7ea2458dbb57c796e9d284079fc835d1b7d7d921c4aa58b990281ee4cbbe8"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed2\\A1\\training.jsonl",
+      "sha256": "222d58f018429300f1e4f8902d028182865757ccd5fa196155bfec6321e1d99a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b1_longcp_seed2\\A1\\final.pt",
+      "sha256": "fac3de99af6f4724a7cf0d499e1c92f802fd1ff6e1a17fbb4255afe02ce93220"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed2\\A1F\\manifest.json",
+      "sha256": "8b1ed391abb34de9ebab145962f4b0b6350ec5e7ff2dbdf0c09eb9dc6dcc0c49"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed2\\A1F\\training.jsonl",
+      "sha256": "42a73496039bba8b76867be58c71fad5ef0fab672197460937adea44993f198f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b1_longcp_seed2\\A1F\\final.pt",
+      "sha256": "b1ec40c87d143eeb4863778ef1a48b073455397bf9c1d33d5f32e49a10933a86"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed3\\A1\\manifest.json",
+      "sha256": "49af3f90fb3bf7812953782fe061ce713b13ca4b11ec4a67990f1ce2a745e9dc"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed3\\A1\\training.jsonl",
+      "sha256": "e27d2021a4eb0e258d75d5698ec95298945326f440b70cb2c2ec63ab1449e6df"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b1_longcp_seed3\\A1\\final.pt",
+      "sha256": "cc42223e6f851785abf97279962e414f97edf55c6b9329a899b5770bf7fb4b6b"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed3\\A1F\\manifest.json",
+      "sha256": "eba2d3b88ea27082786652cce9475ca6f4073aec644452810f15d23856ebe71f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b1_longcp_seed3\\A1F\\training.jsonl",
+      "sha256": "8afb50506b5def883669a8629a981826aef61de16fa21911e7cd6263e503e5b4"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b1_longcp_seed3\\A1F\\final.pt",
+      "sha256": "edad6d2889efb020773245edd6234f3f2065c2cd728baff41adaf522b0cd28c0"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed1\\A1\\manifest.json",
+      "sha256": "493ee4b1a0747d66edaddbc1cc5ab3690892be3d8049574ab4ede6c592edb47c"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed1\\A1\\training.jsonl",
+      "sha256": "d272bf2e48807fd8e49174e5de28718bf505c072de87b4080b6e5e767d59c225"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b2_longcp_seed1\\A1\\final.pt",
+      "sha256": "b52261a63cccec80b8069bfd48843d6f1bad0a07aea071b47abf5ed182227aec"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed1\\A1F\\manifest.json",
+      "sha256": "15b536a6ad08fbc19fc71618bdbe93c612444b808c0e3c4ef13310f1cbda3781"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed1\\A1F\\training.jsonl",
+      "sha256": "7c0b5369623299eb17390b5d62d9a23389752f331e9d3a8f028a2ffb8c93a451"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b2_longcp_seed1\\A1F\\final.pt",
+      "sha256": "6d00165d579c1427410d015dbcf762130dc4c34e3b8de7df9ce6931e5e5a22ed"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed2\\A1\\manifest.json",
+      "sha256": "8552fb820429fffd4b4618c4a8328d1fcae793bb89a43a180881dd81ce24c353"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed2\\A1\\training.jsonl",
+      "sha256": "5428c2cef2c5ff2846d23a5fe87771c4fe1432df01aeaa184c29bb42a1296334"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train\\b2_longcp_seed2\\A1\\final.pt",
+      "sha256": "ebacd424907e2c24638501b17c3c101ba6eaf01bae89806574f4129a92779575"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed2\\A1F\\manifest.json",
+      "sha256": "b2521b565f6ef7f8bfc8cf580ea66cd7be51bca79f5dd15c33002d1bddd8841f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed2\\A1F\\training.jsonl",
+      "sha256": "15d31443c972ba9843b6839f0f433ab70542a13373bdc9ce1adf624ed8fc531e"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed2\\A1F\\final.pt",
+      "sha256": "2ce9bf975bd1255341bd84c419f79929f5c7fe7709acb98d820cb570f1a5ea1b"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed3\\A1\\manifest.json",
+      "sha256": "d1b0211d119423147f86fa6cddb9cfc3e38ea9a1cdfb8f12435e046e9779a303"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed3\\A1\\training.jsonl",
+      "sha256": "80a481b518e08f965ae6bbe3a3b593419ace058b8376cd9f09c271bfaf5f6786"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed3\\A1\\final.pt",
+      "sha256": "fbaf31f16a4c67b1e3515e31033f6926c01041d135434fe3858de6f3cb727eba"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed3\\A1F\\manifest.json",
+      "sha256": "9d0fc663d19af0d4ccaec0c46cdc45aee6b5f8d5604e4147ffd13d40eea66153"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed3\\A1F\\training.jsonl",
+      "sha256": "ecb053320158356fc88866f8a3d9cd5875786ff1119f15333ddc9a6c4725c080"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_longcp_seed3\\A1F\\final.pt",
+      "sha256": "ec7984276f731ae493c45ec28af199333801e3d812b44acd0d80125073821cd0"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed1\\A1\\manifest.json",
+      "sha256": "433a967e93c481588fd01950866a8c05cbad5dd2cb588b61a4b361cfc32af030"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed1\\A1\\training.jsonl",
+      "sha256": "bcdad0ce78d9c7fbe4fd05dd129c82372db7d069a6830076a53f9b4e8cfd1e3a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed1\\A1\\final.pt",
+      "sha256": "6a0b81ea64f55c2ae095a64ccb564d4a1979db99b9838a006cb66db9f73a3395"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed1\\A1F\\manifest.json",
+      "sha256": "f95754579ec0e2c773fcaa8e1ea08082503152c7cd715f247caa0c690555540d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed1\\A1F\\training.jsonl",
+      "sha256": "4ce22969fb6d3586a0e57705ba4a670976ef0f098ad3259d065df2dff44fa2f9"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed1\\A1F\\final.pt",
+      "sha256": "99402e480c485e6e8a71532c07ac29f7a7e7fcc22407d9ee246db1498fef7dc8"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed2\\A1\\manifest.json",
+      "sha256": "1dccea0dd585f5f5c78e0b80fed25c8057ebbcaa823f9edcbe87e442f66f71e0"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed2\\A1\\training.jsonl",
+      "sha256": "fcf0839e6401e14e5c9f99e92d3aa90d2df82f73aa803b98c14dd0299b1287b5"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed2\\A1\\final.pt",
+      "sha256": "bc92b94cfe44d778d2f8dcf3639ab21410b06542f2d47acf4fcbcfb6a11841e0"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed2\\A1F\\manifest.json",
+      "sha256": "a902a2ce7fc5119617415d99e0f10e4302ccc50d0f63bedbc5348982b399e24a"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed2\\A1F\\training.jsonl",
+      "sha256": "3d5258b2ecc8580cd0e428fe36e7e2120a57cfb0159a210d562f5099ba5770cb"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed2\\A1F\\final.pt",
+      "sha256": "773067fd28bdb1c61e67d4944de83f86c7a6126a70c8c6ce31a777dd5cf1553f"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed3\\A1\\manifest.json",
+      "sha256": "56e687c74a638f3768006058105e3ac2a6af5042a41d83623c1766c417220e99"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed3\\A1\\training.jsonl",
+      "sha256": "9a22080bd7032a2cb07ff975e05fe08ef901f7cfae089f7002ed8d3c6d7ed4aa"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed3\\A1\\final.pt",
+      "sha256": "9b22091819862c699bd4fee117472feab776aaac94cee1b4c359b31d0ef6fa7d"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed3\\A1F\\manifest.json",
+      "sha256": "3d4fd00230265b7f25e020a68dfd0936726c833c994fe1ff009cd6550efaf1a3"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed3\\A1F\\training.jsonl",
+      "sha256": "aa8f332da5db1db8cb0708b8673b4e525b7bac66041f8243eb8192ea03be7624"
+    },
+    {
+      "path": "E:\\biyelunwen\\dccn\\experiments\\continued_qat_20261011\\train_recovered_20261013\\b2_shortcp_seed3\\A1F\\final.pt",
+      "sha256": "62a4479da1e241e11fc14effc8fcc8a81c4a6265f08be2331e237b3d94eb50bd"
+    }
+  ],
+  "outputs": {
+    "activation_range_changes.csv": {
+      "sha256": "2a0c4f02f81222a3305e7a0053adfb1f762942a0143f461c1f1bb73816f22e27",
+      "rows": 576
+    },
+    "all_contrasts.csv": {
+      "sha256": "a404a78156819def72991e84aa060baafb12a3d8ad6cadffd0a49bc1dc351a41",
+      "rows": 432
+    },
+    "all_points.csv": {
+      "sha256": "f3ce7553e131621f7bdf881a35ed07c312ea692ce20fb5b305ac5d8a5b17cbf6",
+      "rows": 360
+    },
+    "condition_arm_seed_summary.csv": {
+      "sha256": "40b265d5019b6a37ab8505fe5f252d91f7109bf5fbf62fca5ea690f7795d30ab",
+      "rows": 120
+    },
+    "condition_contrast_seed_summary.csv": {
+      "sha256": "db6386c7a478f0dbf8cd8e3885c35a41e289d256365dcfbfb5b3d33e9bc44edf",
+      "rows": 144
+    },
+    "config_arm_summary.csv": {
+      "sha256": "64e2e1a91934be7c9d6e14d55c0356de559c9dae9740b588394fc3b129d8d273",
+      "rows": 15
+    },
+    "config_contrast_summary.csv": {
+      "sha256": "3453114a3bc35ff055eb0aa77f9fe0909c7b451084b39d5d58ab4d98a813d4f4",
+      "rows": 18
+    },
+    "observed_thresholds.csv": {
+      "sha256": "12e6b478cdf40061d8e340dfdee331831d77725143b0817bdb0d0b07f783258b",
+      "rows": 90
+    },
+    "seed_grid_arms.csv": {
+      "sha256": "983a868a477fb75d75574c90badd5dec6211c7b82f7e36e19060761b7e1f1dc8",
+      "rows": 45
+    },
+    "seed_grid_contrasts.csv": {
+      "sha256": "a464b2ea745ad73222df3e956dfec331b8638ceb6dff60c3abff50e5cb06cdcc",
+      "rows": 54
+    },
+    "summary.json": {
+      "sha256": "fdf89e0780bf85cae6d1abfd12c872e20e15a1eff5b12bec8b641835ed003e27",
+      "rows": null
+    },
+    "training_costs.csv": {
+      "sha256": "afcd46ecff3b245dbe6777c207fc1ab727ffc6303890796f7e408db690b1e1a5",
+      "rows": 18
+    },
+    "training_curves.csv": {
+      "sha256": "dcc8dddf61c1567ae5867740dc0281b5e494bdf265be62ed65ff72957929d6a5",
+      "rows": 540
+    }
+  },
+  "environment": {
+    "python": "3.9.23",
+    "numpy": "2.0.2"
+  },
+  "source_integrity": "Every condition retained; raw bit/slot conservation rechecked; independent audit required",
+  "figure_data_scope": "These are real final-test and training artifacts; no mock observations"
+}

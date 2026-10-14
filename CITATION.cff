@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the real archived release DOI once published; this local candidate has no DOI yet."
+type: software
+title: "Reproducibility package: Structure- and Sensitivity-Guided FPGA Mapping of a CP-Aware Complex Neural OFDM Receiver"
+version: 1.0.0
+authors:
+  - family-names: Li
+    given-names: Ziyang
+    affiliation: "School of Electronic Engineering, Xi'an University of Posts and Telecommunications"
+    orcid: "https://orcid.org/0009-0005-9361-286X"
+  - family-names: Liu
+    given-names: Youyao
+    affiliation: "School of Electronic Engineering, Xi'an University of Posts and Telecommunications"
+  - family-names: Wang
+    given-names: Lele
+    affiliation: "School of Electronic Engineering, Xi'an University of Posts and Telecommunications"
+keywords:
+  - OFDM
+  - FPGA
+  - quantization-aware training
+  - reproducibility

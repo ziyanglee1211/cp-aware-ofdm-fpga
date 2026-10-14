@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "sources": {
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\receiver_local_a12.cpp": "03a7408cf7aec2142992201865173b5e3f6d8cc3cdadc622946eb5eb48d076f5",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\local_a12_quant.h": "4197c88dc5a8e29e34989cf60856fc314ead6766c6195cd30c213ce4772eee1a",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\native_bridge.cpp": "8bb9ac6ae67eacfac72d37e897798b76cb005529d9e6aafa11d558e226aae036",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\a12.dll": "e48327f36fa492c2ff27efe5815082ad58a5671d94b99834374a0c4e0f7232f9",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\rev_t.dll": "194caacd046179eaef48ee4d1fbc66a84a6f7771c42ab25942f6fc61e425b102",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\weights.h": "ee05ffa702aa60e41d95546c25884095103565e6c25ede49b73159fc40e603fe",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\weights_pack_rev_f.h": "7e1360cabb07528480dfc2b612f032754dbd768794205ca56df0b022092c08cb",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\stim.h": "fc228d0b2a540ad8cf2fd483c0ab7f98d448465dffbbef67253ecbbc871483c3",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\PROTOCOL.md": "3b5116af42c795853ec21b20d7af7c4e2fd08876d23d0995137a16aac7cce46d",
+    "E:\\biyelunwen\\e5_hls\\experiments\\local_a12_20261002\\validate_transfer.py": "b58b1d44f01037bd6915ddf0bcf1238324ee5e3048553574e05c345b6c051d84",
+    "E:\\biyelunwen\\e5_hls\\experiments\\pdpfix_opt_20260928\\receiver_opt_rev_t.cpp": "767be325c7cf28f4bb655120fe3aa26fcc2ff8652bf236b7ed9408b539ddb0f6",
+    "E:\\biyelunwen\\dccn\\ckpt\\sq_b1_longcp_s_r0_slim_w8a8_pdpfix_seed1.pt": "432de5f22894cd9ca41639273a225b7c20e8047b9d0c1fc3dd3c5414fa7f70ce",
+    "E:\\biyelunwen\\dccn\\run_back_precision_followup.py": "3f9a8fe4f97c2c5ac2d33e7abb0a10a7bc11fa0fa44f08cae9bc28f7ae57acf8",
+    "E:\\biyelunwen\\dccn\\run_precision_localization_pdpfix.py": "516b6180193917d299543dfbf937f6937a9db43488b03f5955b9e44b58e2d285",
+    "E:\\biyelunwen\\dccn\\struct_quant_model.py": "3d04ed8ed0ee65bb29c9a9bf1ef54b64f1f2a2feab4da0ed6634cacccbadb2ae",
+    "E:\\biyelunwen\\dccn\\quant.py": "83d132738abc82bdb472ef66b0f08bc0aa50c93674c20bccca91d1a5b5e8fde3",
+    "E:\\biyelunwen\\dccn\\quant_model.py": "701f3beecd05f4b484dd9aec1001d1131373f9b2194560771da314303b7c69d5",
+    "E:\\biyelunwen\\dccn\\struct_model.py": "32b597bfaf95afa689fc41b65b16a210914e91d3f033343d0b7b905909f05254",
+    "E:\\biyelunwen\\dccn\\config.py": "ea8a7c5874eea929dd185de173194355e5911f1453c481480b90b08adf512efb",
+    "E:\\biyelunwen\\dccn\\ofdm.py": "8e56b7f8db26d56ac8693ae734f42a08a58ca0f8d579e3442588eabac0d6c730",
+    "E:\\biyelunwen\\dccn\\train.py": "2fa24445b21b13f860524d5a4f6058eff25b255fadb6ab34400901b5ee90f647",
+    "E:\\biyelunwen\\dccn\\paired_research_stats.py": "239f803fc86da98805e6d3da37a15392b0504479a16a29235eb113275202fa73",
+    "E:\\biyelunwen\\dccn\\eval_paired_b1_longcp_pdpfix.py": "d3047e0098a16ba869d41250638c22b18d511cf1f8345c900669fcf4ef130f14"
+  },
+  "python": "3.9.23",
+  "torch": "2.8.0+cpu",
+  "numpy": "2.0.2",
+  "compiler": "GCC 8.3.0 -O2 -ffp-contract=off",
+  "checkpoint_scope": "BPSK long CP seed1 only",
+  "conditions": [
+    "b1_longcp_seed1_EVA_12dB",
+    "b1_longcp_seed1_EVA_16dB",
+    "b1_longcp_seed1_EVA_20dB",
+    "b1_longcp_seed1_EVA_24dB",
+    "b1_longcp_seed1_ETU_12dB",
+    "b1_longcp_seed1_ETU_16dB",
+    "b1_longcp_seed1_ETU_20dB",
+    "b1_longcp_seed1_ETU_24dB"
+  ],
+  "cohort": "Existing locked confirmation cohort 2026100202; transfer audit, not new independent samples",
+  "fixed": {
+    "rev_t": {
+      "decisions": 19200,
+      "mismatches": 0,
+      "mismatch_indices": []
+    },
+    "a12": {
+      "decisions": 19200,
+      "mismatches": 0,
+      "mismatch_indices": []
+    }
+  },
+  "source_hashes_unchanged": true,
+  "state_unchanged": true
+}

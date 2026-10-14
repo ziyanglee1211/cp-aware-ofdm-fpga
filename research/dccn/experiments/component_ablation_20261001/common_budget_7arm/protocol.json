@@ -1,0 +1,102 @@
+{
+  "status": "COMMON_BUDGET_RETRAINED_COMPONENT_ABLATION",
+  "system": "N=64 F=7 CP=16 S=80 pilots/slot=16 data/slot=320 nbits=1",
+  "variants": {
+    "slim2": "CP folding, learned front/back mixes and RE gains, differential depth 2",
+    "discard_cp": "Zero CP rows in both analysis transforms; retain inverse CP synthesis and full-slot RMS; reproject teacher using the changed analysis operator",
+    "fixed_front": "Replace front frequency mixing by fixed identity and its bias by zero; fine-tune every remaining component",
+    "fixed_back": "Replace back correction mixing by fixed identity and its bias by zero; fine-tune every remaining component",
+    "fixed_basic_gain": "Fix data-RE gain to one and bias to zero; fine-tune every remaining component",
+    "serial2": "Keep two tanh blocks and readout, use serial h_j=tanh(W_j h_(j-1)+b_j) instead of differential chaining",
+    "full6": "Differential depth 6, with every other component unchanged"
+  },
+  "active_variants": [
+    "slim2",
+    "discard_cp",
+    "fixed_front",
+    "fixed_back",
+    "fixed_basic_gain",
+    "serial2",
+    "full6"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "training": {
+    "updates": 1000,
+    "batch": 256,
+    "examples_per_arm_seed": 256000,
+    "teacher": "same training-seed dense corrected-PDP checkpoints for every arm",
+    "initialization": "least-squares projection onto each arm's own analysis operator; prescribed identity/zero values for removed corrections",
+    "checkpoint_selection": "final fixed-budget checkpoint; no early stopping",
+    "paired_data": "one transmit/fading/noise draw per update, physically identical received tensor consumed by all arms",
+    "data_seed_rule": "10000000 + 100000*training_seed + step",
+    "all_step_stimulus_hash_chain": true,
+    "snr_law": "dccn.train.sample_mixed_snr",
+    "channels": [
+      "flat",
+      "EPA",
+      "EVA",
+      "ETU"
+    ],
+    "lr": 0.0001,
+    "weight_decay": 1e-05,
+    "optimizer": "Adam",
+    "scheduler": "StepLR(gamma=0.95, step_size=500)"
+  },
+  "evaluation": {
+    "channels": [
+      "EVA",
+      "ETU"
+    ],
+    "snrs_db": [
+      0.0,
+      4.0,
+      8.0,
+      12.0,
+      16.0,
+      20.0,
+      24.0,
+      28.0
+    ],
+    "slots_per_channel_snr_seed": 2000,
+    "bits_per_slot": 320,
+    "target_ber": 0.02,
+    "shared_stimulus": "one batch generation per condition, all arms use identical inputs",
+    "point_seed_rule": "20260904 + training_seed + int(10*SNR_dB)",
+    "threshold": "first crossing of nonincreasing BER envelope, log10(BER)-linear interpolation; explicit censoring; half-count interpolation floor only if crossing bracket has zero errors",
+    "uncertainty": "independent training-seed sample SD; bit counts not treated as independent replicates"
+  },
+  "boundary": "A reproject-and-fine-tune architectural intervention, not from-scratch training. Equal update/example budgets, not equal parameter counts or wall time. 1000x256 budget differs from mainline up-to-3000x512 plus BER checkpoint selection. No JTAG, latency or resource conclusions.",
+  "environment": {
+    "python": "3.9.23",
+    "torch": "2.8.0+cpu",
+    "numpy": "2.0.2",
+    "device": "cpu",
+    "threads": 2
+  },
+  "source_files_sha256": {
+    "E:\\biyelunwen\\dccn\\run_component_ablation_pdpfix.py": "6f0aa465bc2e17348f48540a3a02dba2f3417ed3ea5a59bb89f95bba5850f707",
+    "E:\\biyelunwen\\dccn\\struct_model.py": "32b597bfaf95afa689fc41b65b16a210914e91d3f033343d0b7b905909f05254",
+    "E:\\biyelunwen\\dccn\\ofdm.py": "8e56b7f8db26d56ac8693ae734f42a08a58ca0f8d579e3442588eabac0d6c730",
+    "E:\\biyelunwen\\dccn\\train.py": "2fa24445b21b13f860524d5a4f6058eff25b255fadb6ab34400901b5ee90f647",
+    "E:\\biyelunwen\\dccn\\config.py": "ea8a7c5874eea929dd185de173194355e5911f1453c481480b90b08adf512efb",
+    "E:\\biyelunwen\\dccn\\layers.py": "34f0cbcda8b0bf4aff1a6ac5148a16e2b001916750c269830b3575fd72f9ae97"
+  },
+  "source_checkpoints": {
+    "1": {
+      "E:\\biyelunwen\\dccn\\ckpt\\basic_b1_longcp_pdpfix_seed1.pt": "ab75adbbd28ea2abf5b221258412625000231c94ee1df260b259338806113bab",
+      "E:\\biyelunwen\\dccn\\ckpt\\dccn_b1_longcp_pdpfix_seed1.pt": "6681b845eb9b9f4393aac43ed21d83a52e9f60c268bd6eaf7e5365824166abbd"
+    },
+    "2": {
+      "E:\\biyelunwen\\dccn\\ckpt\\basic_b1_longcp_pdpfix_seed2.pt": "3c0b6e48e9d698543ceb86bec085e6ed095bf0445361869c38203869196b56f0",
+      "E:\\biyelunwen\\dccn\\ckpt\\dccn_b1_longcp_pdpfix_seed2.pt": "e88fd6428d686a83fb1cc774b83cee5974caf356fb15076a14a2d9c24537b168"
+    },
+    "3": {
+      "E:\\biyelunwen\\dccn\\ckpt\\basic_b1_longcp_pdpfix_seed3.pt": "aa4ed29dc400748b9209a34e575feeba2c92787e634f3bd2de8e2feced3951b7",
+      "E:\\biyelunwen\\dccn\\ckpt\\dccn_b1_longcp_pdpfix_seed3.pt": "bdbcc6c5387afb5f97fe73666729ffbb81588b3c29121ddfb6a7a205ec311ba4"
+    }
+  }
+}

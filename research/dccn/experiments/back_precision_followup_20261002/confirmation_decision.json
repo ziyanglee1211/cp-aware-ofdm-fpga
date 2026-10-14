@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "confirmation_protocol_sha256": "755996a2dc37165e3dbf84e823b0f76b48a4628936899e97022d0dd77f0cbdd8",
+  "confirmation_manifest_sha256": "92ccf5c586fea5884031417e2c1b573292de179154d4cac01f11292a156c7dcf",
+  "confirmation_summary_sha256": "5d6c1fc6d1770a9e5ef6d741f1786834934cfddabc57c14e85b586556f30fe47",
+  "received_cohorts_disjoint_from_nomination": true,
+  "selected_candidate": "back_out_a12",
+  "raw_seed_grid_deltas": {
+    "b1_longcp": [
+      -0.00037480468750000003,
+      -0.0003265625,
+      -0.0003767578125
+    ],
+    "b2_longcp": [
+      -0.00045869140625,
+      -0.0010798828125,
+      -0.00034267578125000004
+    ],
+    "b2_shortcp": [
+      -0.00212890625,
+      -0.00121416015625,
+      -0.0012913085937500002
+    ]
+  },
+  "all_nine_seed_grid_means_improve": true,
+  "scope": "Independent simulated traffic, same three pretrained checkpoints; no independent retraining, new channel distribution or hardware validation."
+}

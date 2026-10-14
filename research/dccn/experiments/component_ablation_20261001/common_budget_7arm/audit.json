@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "run": "E:\\biyelunwen\\dccn\\experiments\\component_ablation_20261001\\common_budget_7arm",
+  "checks": {
+    "immutable_teachers_and_recorded_sources": true,
+    "source_and_result_hashes_match": true,
+    "every_arm_received_the_same_training_chain": true,
+    "identity_zero_gain_interventions_still_fixed_after_training": true,
+    "paired_bit_contingencies_and_slot_counts_consistent": true,
+    "control_graph_exactly_matches_shared_model": true
+  },
+  "final_checkpoints": 21,
+  "channel_snr_seed_conditions": 48,
+  "paired_vs_control_conditional_bootstraps": 288,
+  "unique_test_slots": 96000,
+  "unique_test_bits_not_independent_replicates": 30720000,
+  "method_decisions_not_extra_independent_stimuli": 215040000,
+  "historical_depth_protocol_reproduction": {
+    "1": {
+      "first_training_stimulus_identical": true,
+      "last_training_stimulus_identical": true,
+      "maximum_absolute_control_ber_delta": 1.5624999999963585e-06,
+      "maximum_absolute_full6_ber_delta": 0.0
+    },
+    "2": {
+      "first_training_stimulus_identical": true,
+      "last_training_stimulus_identical": true,
+      "maximum_absolute_control_ber_delta": 5.78124999999971e-05,
+      "maximum_absolute_full6_ber_delta": 0.00015781249999999303
+    },
+    "3": {
+      "first_training_stimulus_identical": true,
+      "last_training_stimulus_identical": true,
+      "maximum_absolute_control_ber_delta": 1.562500000024114e-06,
+      "maximum_absolute_full6_ber_delta": 0.0
+    }
+  },
+  "operation_and_parameter_accounting": {
+    "slim2": {
+      "stored_parameters": 345338,
+      "trainable_parameters": 345338,
+      "transform_only_fft_backbone_complex_mac_proxy": 61696,
+      "transform_only_direct_matrix_reference_complex_macs": 165184,
+      "channel_subnet_real_dense_macs": 326144,
+      "classifier_real_dense_macs": 2560,
+      "analysis_cp_fold_complex_additions_in_fft_mapping": 224,
+      "fixed_identity_maps_are_still_dense_gemm_in_this_reference_graph": false,
+      "scope": "Separate complex and real MAC categories, not total FLOPs. FFT proxy adopts shared accounting convention; Python uses direct matrices and keeps literal identity GEMM / unit gain arithmetic. CP-fold addition count is an algebraic mapping count, not measured CPU work. Excludes RMS, nonlinearities, division, memory traffic and control; not an HLS resource/latency prediction."
+    },
+    "discard_cp": {
+      "stored_parameters": 345338,
+      "trainable_parameters": 345338,
+      "transform_only_fft_backbone_complex_mac_proxy": 61696,
+      "transform_only_direct_matrix_reference_complex_macs": 165184,
+      "channel_subnet_real_dense_macs": 326144,
+      "classifier_real_dense_macs": 2560,
+      "analysis_cp_fold_complex_additions_in_fft_mapping": 0,
+      "fixed_identity_maps_are_still_dense_gemm_in_this_reference_graph": false,
+      "scope": "Separate complex and real MAC categories, not total FLOPs. FFT proxy adopts shared accounting convention; Python uses direct matrices and keeps literal identity GEMM / unit gain arithmetic. CP-fold addition count is an algebraic mapping count, not measured CPU work. Excludes RMS, nonlinearities, division, memory traffic and control; not an HLS resource/latency prediction."
+    },
+    "fixed_front": {
+      "stored_parameters": 345338,
+      "trainable_parameters": 337018,
+      "transform_only_fft_backbone_complex_mac_proxy": 61696,
+      "transform_only_direct_matrix_reference_complex_macs": 165184,
+      "channel_subnet_real_dense_macs": 326144,
+      "classifier_real_dense_macs": 2560,
+      "analysis_cp_fold_complex_additions_in_fft_mapping": 224,
+      "fixed_identity_maps_are_still_dense_gemm_in_this_reference_graph": true,
+      "scope": "Separate complex and real MAC categories, not total FLOPs. FFT proxy adopts shared accounting convention; Python uses direct matrices and keeps literal identity GEMM / unit gain arithmetic. CP-fold addition count is an algebraic mapping count, not measured CPU work. Excludes RMS, nonlinearities, division, memory traffic and control; not an HLS resource/latency prediction."
+    },
+    "fixed_back": {
+      "stored_parameters": 345338,
+      "trainable_parameters": 336986,
+      "transform_only_fft_backbone_complex_mac_proxy": 61696,
+      "transform_only_direct_matrix_reference_complex_macs": 165184,
+      "channel_subnet_real_dense_macs": 326144,
+      "classifier_real_dense_macs": 2560,
+      "analysis_cp_fold_complex_additions_in_fft_mapping": 224,
+      "fixed_identity_maps_are_still_dense_gemm_in_this_reference_graph": true,
+      "scope": "Separate complex and real MAC categories, not total FLOPs. FFT proxy adopts shared accounting convention; Python uses direct matrices and keeps literal identity GEMM / unit gain arithmetic. CP-fold addition count is an algebraic mapping count, not measured CPU work. Excludes RMS, nonlinearities, division, memory traffic and control; not an HLS resource/latency prediction."
+    },
+    "fixed_basic_gain": {
+      "stored_parameters": 345338,
+      "trainable_parameters": 344058,
+      "transform_only_fft_backbone_complex_mac_proxy": 61696,
+      "transform_only_direct_matrix_reference_complex_macs": 165184,
+      "channel_subnet_real_dense_macs": 326144,
+      "classifier_real_dense_macs": 2560,
+      "analysis_cp_fold_complex_additions_in_fft_mapping": 224,
+      "fixed_identity_maps_are_still_dense_gemm_in_this_reference_graph": false,
+      "scope": "Separate complex and real MAC categories, not total FLOPs. FFT proxy adopts shared accounting convention; Python uses direct matrices and keeps literal identity GEMM / unit gain arithmetic. CP-fold addition count is an algebraic mapping count, not measured CPU work. Excludes RMS, nonlinearities, division, memory traffic and control; not an HLS resource/latency prediction."
+    },
+    "serial2": {
+      "stored_parameters": 345338,
+      "trainable_parameters": 345338,
+      "transform_only_fft_backbone_complex_mac_proxy": 61696,
+      "transform_only_direct_matrix_reference_complex_macs": 165184,
+      "channel_subnet_real_dense_macs": 326144,
+      "classifier_real_dense_macs": 2560,
+      "analysis_cp_fold_complex_additions_in_fft_mapping": 224,
+      "fixed_identity_maps_are_still_dense_gemm_in_this_reference_graph": false,
+      "scope": "Separate complex and real MAC categories, not total FLOPs. FFT proxy adopts shared accounting convention; Python uses direct matrices and keeps literal identity GEMM / unit gain arithmetic. CP-fold addition count is an algebraic mapping count, not measured CPU work. Excludes RMS, nonlinearities, division, memory traffic and control; not an HLS resource/latency prediction."
+    },
+    "full6": {
+      "stored_parameters": 797370,
+      "trainable_parameters": 797370,
+      "transform_only_fft_backbone_complex_mac_proxy": 61696,
+      "transform_only_direct_matrix_reference_complex_macs": 165184,
+      "channel_subnet_real_dense_macs": 777728,
+      "classifier_real_dense_macs": 2560,
+      "analysis_cp_fold_complex_additions_in_fft_mapping": 224,
+      "fixed_identity_maps_are_still_dense_gemm_in_this_reference_graph": false,
+      "scope": "Separate complex and real MAC categories, not total FLOPs. FFT proxy adopts shared accounting convention; Python uses direct matrices and keeps literal identity GEMM / unit gain arithmetic. CP-fold addition count is an algebraic mapping count, not measured CPU work. Excludes RMS, nonlinearities, division, memory traffic and control; not an HLS resource/latency prediction."
+    }
+  },
+  "additional_software_provenance_sha256": {
+    "E:\\biyelunwen\\dccn\\experiments\\component_ablation_20261001\\audit_component_results.py": "1f0d3572b8820758ddc9ad79b68f7c3ac0e60b0954371e73ec1cee90800d0803",
+    "E:\\biyelunwen\\dccn\\experiments\\component_ablation_20261001\\test_component_ablation.py": "a03ea964247c975b6199dc2af00c76c36045036f8cc510cdb1184ccbaf0b59c4",
+    "E:\\biyelunwen\\dccn\\receiver.py": "500de1945c679a72e18f30c005d469ef3f4d1286de11129d8abfb5cdbbf1ae04",
+    "E:\\biyelunwen\\dccn\\paired_research_stats.py": "239f803fc86da98805e6d3da37a15392b0504479a16a29235eb113275202fa73"
+  },
+  "scientific_limits": "Three training seeds. Architecture-dependent teacher projection and final 1000-update adaptation, not from scratch; some identity arms still show descending training losses. No unqualified necessity, equivalence, hardware resource or latency claims."
+}

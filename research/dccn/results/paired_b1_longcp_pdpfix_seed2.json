@@ -1,0 +1,1380 @@
+{
+  "status": "FORMAL_CORRECTED_PDP_SLOT_PAIRED",
+  "protocol": {
+    "system": "N=64 F=7 CP=16 S=80 pilots/slot=16 data/slot=320 nbits=1",
+    "pdp_mode": "3gpp_db_to_linear_power",
+    "channel_profiles": {
+      "EVA": {
+        "pdp_db": [
+          0.0,
+          -1.5,
+          -1.399999976158142,
+          -3.5999999046325684,
+          -0.6000000238418579,
+          -9.100000381469727,
+          -7.0,
+          -12.0,
+          -16.899999618530273
+        ],
+        "pdp_linear_normalized": [
+          0.24120058119297028,
+          0.17075693607330322,
+          0.17473438382148743,
+          0.10528787225484848,
+          0.2100769281387329,
+          0.02967415377497673,
+          0.048125844448804855,
+          0.015218726359307766,
+          0.004924684762954712
+        ],
+        "resampling_matrix_sha256": "93bb44304def0e065832e5a28780e412023ba93d93b6aab0dc0f07f4f12681c3"
+      },
+      "ETU": {
+        "pdp_db": [
+          -1.0,
+          -1.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          -3.0,
+          -5.0,
+          -7.0
+        ],
+        "pdp_linear_normalized": [
+          0.12411521375179291,
+          0.12411521375179291,
+          0.12411521375179291,
+          0.15625180304050446,
+          0.15625180304050446,
+          0.15625180304050446,
+          0.07831140607595444,
+          0.04941115900874138,
+          0.031176334246993065
+        ],
+        "resampling_matrix_sha256": "13a5a09c2e6ad2b8045e217998355c9cbe39611414e24900803fceccaf5e3d7b"
+      }
+    },
+    "slots_per_snr_per_seed": 2000,
+    "bits_per_slot": 320,
+    "snr_grid_db": [
+      0.0,
+      4.0,
+      8.0,
+      12.0,
+      16.0,
+      20.0,
+      24.0,
+      28.0
+    ],
+    "target_ber": 0.02,
+    "evaluation_point_seed_rule": "20260904 + training_seed + int(snr_db * 10), reset per channel/SNR",
+    "generation": "one transmit and one fading/AWGN call per channel/SNR/seed; every method consumes the identical received tensor",
+    "threshold_interpolation": "per-seed nonincreasing BER envelope, first crossing, linear in SNR versus log10(BER)",
+    "ideal_lmmse": "oracle true-channel direction",
+    "legacy_checkpoints": false,
+    "device": "cpu",
+    "torch_version": "2.8.0+cpu",
+    "numpy_version": "2.0.2",
+    "python_version": "3.9.23",
+    "script_sha256": "d3047e0098a16ba869d41250638c22b18d511cf1f8345c900669fcf4ef130f14"
+  },
+  "seed_result": {
+    "training_seed": 2,
+    "evaluation_seed": 20260906,
+    "checkpoint_paths": {
+      "basic_fp32": "E:\\biyelunwen\\dccn\\ckpt\\basic_b1_longcp_pdpfix_seed2.pt",
+      "dense_fp32": "E:\\biyelunwen\\dccn\\ckpt\\dccn_b1_longcp_pdpfix_seed2.pt",
+      "structured_fp32": "E:\\biyelunwen\\dccn\\ckpt\\struct_b1_longcp_s_r0_slim_pdpfix_seed2.pt",
+      "structured_w8a8": "E:\\biyelunwen\\dccn\\ckpt\\sq_b1_longcp_s_r0_slim_w8a8_pdpfix_seed2.pt"
+    },
+    "checkpoint_sha256": {
+      "basic_fp32": "3c0b6e48e9d698543ceb86bec085e6ed095bf0445361869c38203869196b56f0",
+      "dense_fp32": "e88fd6428d686a83fb1cc774b83cee5974caf356fb15076a14a2d9c24537b168",
+      "structured_fp32": "508d349038b24f4adc8ada99860a91e7f4040bd69ba6322bb2dc9ba9d0bda6af",
+      "structured_w8a8": "5d8d82a4160cf265e9edbc39fc8b12dbca32f79df10fa53e1e05f5af4d9305d9"
+    },
+    "channels": {
+      "EVA": {
+        "snrs_db": [
+          0.0,
+          4.0,
+          8.0,
+          12.0,
+          16.0,
+          20.0,
+          24.0,
+          28.0
+        ],
+        "points": [
+          {
+            "snr_db": 0.0,
+            "point_seed": 20260906,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 136386,
+              "structured_fp32": 131549,
+              "structured_w8a8": 134645,
+              "ls_spline": 204158,
+              "ideal_lmmse": 123870,
+              "almmse": 186882,
+              "ls_cp": 188482,
+              "perfect_csi": 95431
+            },
+            "ber": {
+              "dense_fp32": 0.213103125,
+              "structured_fp32": 0.2055453125,
+              "structured_w8a8": 0.2103828125,
+              "ls_spline": 0.318996875,
+              "ideal_lmmse": 0.193546875,
+              "almmse": 0.292003125,
+              "ls_cp": 0.294503125,
+              "perfect_csi": 0.1491109375
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "82188783e9ced19ab8c6de4bd4029d9436804b075314d3a21c986d227d3f560c",
+              "information_bits": "5ca7997d4e65b96b0bb39c87a1175ba2558c928a9955788bfe317f7e1ef5538c",
+              "channel_taps": "3e711faee2f96a9b78df4c7a41fb75914b8556d39e63f6093c94b04569702bb3",
+              "effective_noise_residual": "a6e661233802ae89940d803ace43d222b72ab211e3d0866c0d464a2322cb3bd4",
+              "received_time_samples": "397bdfc137212054f829f19accbaa4ed30c1ceb8060e5ecf0ea8a4500797b6a3"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 26925,
+                "b_only_error": 31762,
+                "both_error": 104624,
+                "neither_error": 476689
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 13188,
+                "b_only_error": 10092,
+                "both_error": 121457,
+                "neither_error": 495263
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 56819,
+                "b_only_error": 126332,
+                "both_error": 77826,
+                "neither_error": 379023
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 68727,
+                "b_only_error": 57952,
+                "both_error": 65918,
+                "neither_error": 447403
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 54078,
+                "b_only_error": 106315,
+                "both_error": 80567,
+                "neither_error": 399040
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 54410,
+                "b_only_error": 108247,
+                "both_error": 80235,
+                "neither_error": 397108
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 77548,
+                "b_only_error": 38334,
+                "both_error": 57097,
+                "neither_error": 467021
+              }
+            }
+          },
+          {
+            "snr_db": 4.0,
+            "point_seed": 20260946,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 76947,
+              "structured_fp32": 72668,
+              "structured_w8a8": 75224,
+              "ls_spline": 141145,
+              "ideal_lmmse": 63673,
+              "almmse": 120721,
+              "ls_cp": 122621,
+              "perfect_csi": 50532
+            },
+            "ber": {
+              "dense_fp32": 0.1202296875,
+              "structured_fp32": 0.11354375,
+              "structured_w8a8": 0.1175375,
+              "ls_spline": 0.2205390625,
+              "ideal_lmmse": 0.0994890625,
+              "almmse": 0.1886265625,
+              "ls_cp": 0.1915953125,
+              "perfect_csi": 0.07895625
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "58412363d344dfa497fb5c8d73baba94fffc83c245044150cb867aa38a5d11f0",
+              "information_bits": "04b9ff8e1e13ca05fde6164a0476ab77ae4f44b59cb2f24e61750f60d3373ee7",
+              "channel_taps": "84556a41f0a8fbf9b6acc15f2f2f2c89072c33f5e714eff40464ba96e8d311e3",
+              "effective_noise_residual": "61d75a1bc469415411e0f4652ca8727a5b1429bdaddb7799511ad6ec9fbacff8",
+              "received_time_samples": "33d835b9cb5d50a2b908cd20f13415652f214e0529a5d55f068d6df7cce51a56"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 16595,
+                "b_only_error": 20874,
+                "both_error": 56073,
+                "neither_error": 546458
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 8971,
+                "b_only_error": 6415,
+                "both_error": 66253,
+                "neither_error": 558361
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 32916,
+                "b_only_error": 98837,
+                "both_error": 42308,
+                "neither_error": 465939
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 42060,
+                "b_only_error": 30509,
+                "both_error": 33164,
+                "neither_error": 534267
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 31647,
+                "b_only_error": 77144,
+                "both_error": 43577,
+                "neither_error": 487632
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 31735,
+                "b_only_error": 79132,
+                "both_error": 43489,
+                "neither_error": 485644
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 45099,
+                "b_only_error": 20407,
+                "both_error": 30125,
+                "neither_error": 544369
+              }
+            }
+          },
+          {
+            "snr_db": 8.0,
+            "point_seed": 20260986,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 38203,
+              "structured_fp32": 35446,
+              "structured_w8a8": 36988,
+              "ls_spline": 85952,
+              "ideal_lmmse": 29110,
+              "almmse": 67393,
+              "ls_cp": 68685,
+              "perfect_csi": 24015
+            },
+            "ber": {
+              "dense_fp32": 0.0596921875,
+              "structured_fp32": 0.055384375,
+              "structured_w8a8": 0.05779375,
+              "ls_spline": 0.1343,
+              "ideal_lmmse": 0.045484375,
+              "almmse": 0.1053015625,
+              "ls_cp": 0.1073203125,
+              "perfect_csi": 0.0375234375
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "6b35c70bdf318f8eac200beee3cbc406dedc7a1bf8be8a7ef3de40717ee83947",
+              "information_bits": "16334d0378d3fcf1b0e4fbcfff12598371810cbf54c2832af033c016b36fcb6e",
+              "channel_taps": "ecd602cc23f784aaff68a9db1188d4154d08f1b24c0e5cc24836ff63edcc03d9",
+              "effective_noise_residual": "82e2a7f37a1dbfdf4c1611ff894096926f88e9aa2cd41dae93630f0442575ecd",
+              "received_time_samples": "0f65fb495f7a01b3dcc979505c8b73b4d2f565a3eeefa091ec75437ffc449e7f"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 8766,
+                "b_only_error": 11523,
+                "both_error": 26680,
+                "neither_error": 593031
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 5186,
+                "b_only_error": 3644,
+                "both_error": 31802,
+                "neither_error": 599368
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 16538,
+                "b_only_error": 65502,
+                "both_error": 20450,
+                "neither_error": 537510
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 21366,
+                "b_only_error": 13488,
+                "both_error": 15622,
+                "neither_error": 589524
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 16211,
+                "b_only_error": 46616,
+                "both_error": 20777,
+                "neither_error": 556396
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 16244,
+                "b_only_error": 47941,
+                "both_error": 20744,
+                "neither_error": 555071
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 22722,
+                "b_only_error": 9749,
+                "both_error": 14266,
+                "neither_error": 593263
+              }
+            }
+          },
+          {
+            "snr_db": 12.0,
+            "point_seed": 20261026,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 18036,
+              "structured_fp32": 15992,
+              "structured_w8a8": 16839,
+              "ls_spline": 51218,
+              "ideal_lmmse": 12058,
+              "almmse": 35955,
+              "ls_cp": 36841,
+              "perfect_csi": 10309
+            },
+            "ber": {
+              "dense_fp32": 0.02818125,
+              "structured_fp32": 0.0249875,
+              "structured_w8a8": 0.0263109375,
+              "ls_spline": 0.080028125,
+              "ideal_lmmse": 0.018840625,
+              "almmse": 0.0561796875,
+              "ls_cp": 0.0575640625,
+              "perfect_csi": 0.0161078125
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "ceac3cedf444abb546fe29e8ef5e941f4879cf66b68f443d63bc41ccd107bc8c",
+              "information_bits": "f7e448f00c5ee575af944f76cfd59815b1cf73dfef87be0fc2a599c78f983149",
+              "channel_taps": "62f594f6f354650b818eea54a9d208ece1920351553721696e3b450ce8a25733",
+              "effective_noise_residual": "0f171bb9ccc720c1f1d52cbc7beded36c41b9a043451b88a98ab835d938f98b5",
+              "received_time_samples": "d53a1776828b2f03748e893939cb416fdf5c5f2dd07bdc7674dfe71f8fe571c3"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 4511,
+                "b_only_error": 6555,
+                "both_error": 11481,
+                "neither_error": 617453
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 2966,
+                "b_only_error": 2119,
+                "both_error": 13873,
+                "neither_error": 621042
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 7773,
+                "b_only_error": 42152,
+                "both_error": 9066,
+                "neither_error": 581009
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 10494,
+                "b_only_error": 5713,
+                "both_error": 6345,
+                "neither_error": 617448
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 7561,
+                "b_only_error": 26677,
+                "both_error": 9278,
+                "neither_error": 596484
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 7557,
+                "b_only_error": 27559,
+                "both_error": 9282,
+                "neither_error": 595602
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 10871,
+                "b_only_error": 4341,
+                "both_error": 5968,
+                "neither_error": 618820
+              }
+            }
+          },
+          {
+            "snr_db": 16.0,
+            "point_seed": 20261066,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 8702,
+              "structured_fp32": 6703,
+              "structured_w8a8": 7416,
+              "ls_spline": 30994,
+              "ideal_lmmse": 4552,
+              "almmse": 18621,
+              "ls_cp": 19102,
+              "perfect_csi": 4088
+            },
+            "ber": {
+              "dense_fp32": 0.013596875,
+              "structured_fp32": 0.0104734375,
+              "structured_w8a8": 0.0115875,
+              "ls_spline": 0.048428125,
+              "ideal_lmmse": 0.0071125,
+              "almmse": 0.0290953125,
+              "ls_cp": 0.029846875,
+              "perfect_csi": 0.0063875
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "4a9dadd40f7a32a02b62c7b7725bd9ff5bb8fade2e4b28e25ccfb906293c6cc5",
+              "information_bits": "eb5cc118ef8a31eff492b4e04c1a2806b213d7a1cc556d8a9ec602bc4e4f0d59",
+              "channel_taps": "855e263159f8debab451cefef3153011c49ef594a21d9ec78d5004f169b87b7e",
+              "effective_noise_residual": "9cc7141a4f2c616c924351a8bd874d48b8a8a7abf52b07f4507b894669db4419",
+              "received_time_samples": "ff95bcf9b25634d35da5e9a1a96c65950d2f1d44019874dcf4a038189c4c296c"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 2146,
+                "b_only_error": 4145,
+                "both_error": 4557,
+                "neither_error": 629152
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 1902,
+                "b_only_error": 1189,
+                "both_error": 5514,
+                "neither_error": 631395
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 3566,
+                "b_only_error": 27144,
+                "both_error": 3850,
+                "neither_error": 605440
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 5101,
+                "b_only_error": 2237,
+                "both_error": 2315,
+                "neither_error": 630347
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 3536,
+                "b_only_error": 14741,
+                "both_error": 3880,
+                "neither_error": 617843
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 3558,
+                "b_only_error": 15244,
+                "both_error": 3858,
+                "neither_error": 617340
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 5143,
+                "b_only_error": 1815,
+                "both_error": 2273,
+                "neither_error": 630769
+              }
+            }
+          },
+          {
+            "snr_db": 20.0,
+            "point_seed": 20261106,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 4726,
+              "structured_fp32": 3531,
+              "structured_w8a8": 3905,
+              "ls_spline": 23267,
+              "ideal_lmmse": 1879,
+              "almmse": 12176,
+              "ls_cp": 12542,
+              "perfect_csi": 1702
+            },
+            "ber": {
+              "dense_fp32": 0.007384375,
+              "structured_fp32": 0.0055171875,
+              "structured_w8a8": 0.0061015625,
+              "ls_spline": 0.0363546875,
+              "ideal_lmmse": 0.0029359375,
+              "almmse": 0.019025,
+              "ls_cp": 0.019596875,
+              "perfect_csi": 0.002659375
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "290c88dc0676da10eb453360b31990459d1aaae6f2c761bcbbf978a73b67ab29",
+              "information_bits": "072fa097d1c0490df0a60f43aed82bdab3bd77f91fd6f2757b108b4da8333d6a",
+              "channel_taps": "36bc48246d99e0ad4de03c705467220c27bd3966ba8a68b73fdf694b57ffba8e",
+              "effective_noise_residual": "09c9c2280dabb604f893afbd04aa7b15b29997ff18dab74334998959dab794fb",
+              "received_time_samples": "5b114a1b7a985f2358afb18886bdf6946ddb43825d0d9eb2eec18ee244981b27"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 1409,
+                "b_only_error": 2604,
+                "both_error": 2122,
+                "neither_error": 633865
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 1258,
+                "b_only_error": 884,
+                "both_error": 2647,
+                "neither_error": 635211
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 2046,
+                "b_only_error": 21408,
+                "both_error": 1859,
+                "neither_error": 614687
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 2925,
+                "b_only_error": 899,
+                "both_error": 980,
+                "neither_error": 635196
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 1968,
+                "b_only_error": 10239,
+                "both_error": 1937,
+                "neither_error": 625856
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 1966,
+                "b_only_error": 10603,
+                "both_error": 1939,
+                "neither_error": 625492
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 2970,
+                "b_only_error": 767,
+                "both_error": 935,
+                "neither_error": 635328
+              }
+            }
+          },
+          {
+            "snr_db": 24.0,
+            "point_seed": 20261146,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 3243,
+              "structured_fp32": 2008,
+              "structured_w8a8": 2497,
+              "ls_spline": 19466,
+              "ideal_lmmse": 936,
+              "almmse": 8739,
+              "ls_cp": 9058,
+              "perfect_csi": 632
+            },
+            "ber": {
+              "dense_fp32": 0.0050671875,
+              "structured_fp32": 0.0031375,
+              "structured_w8a8": 0.0039015625,
+              "ls_spline": 0.030415625,
+              "ideal_lmmse": 0.0014625,
+              "almmse": 0.0136546875,
+              "ls_cp": 0.014153125,
+              "perfect_csi": 0.0009875
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "19ce2105854c2dea9d28713ea8b959fc648ab7566da5c8c75b98770ffa38799d",
+              "information_bits": "7b617d4bbe33f777d269fe7eb9d98f865ea56cc2487eac215dbf9d523bc48338",
+              "channel_taps": "9747aa33e9f79cea82ea3ac3c6e1c6cfae508cac9b779a1c723fbcf1133e8d97",
+              "effective_noise_residual": "4b6c4e5421a197593f791624f8cfb70e6c99b1d8b64fa057245a2d8055a23f72",
+              "received_time_samples": "45bc2fb6e36325b753f055141d92b90f665e6f538a350169a4d738ea174c9161"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 859,
+                "b_only_error": 2094,
+                "both_error": 1149,
+                "neither_error": 635898
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 1056,
+                "b_only_error": 567,
+                "both_error": 1441,
+                "neither_error": 636936
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 1386,
+                "b_only_error": 18355,
+                "both_error": 1111,
+                "neither_error": 619148
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 2140,
+                "b_only_error": 579,
+                "both_error": 357,
+                "neither_error": 636924
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 1350,
+                "b_only_error": 7592,
+                "both_error": 1147,
+                "neither_error": 629911
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 1311,
+                "b_only_error": 7872,
+                "both_error": 1186,
+                "neither_error": 629631
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 2182,
+                "b_only_error": 317,
+                "both_error": 315,
+                "neither_error": 637186
+              }
+            }
+          },
+          {
+            "snr_db": 28.0,
+            "point_seed": 20261186,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 2858,
+              "structured_fp32": 1501,
+              "structured_w8a8": 2027,
+              "ls_spline": 17435,
+              "ideal_lmmse": 275,
+              "almmse": 7430,
+              "ls_cp": 7665,
+              "perfect_csi": 257
+            },
+            "ber": {
+              "dense_fp32": 0.004465625,
+              "structured_fp32": 0.0023453125,
+              "structured_w8a8": 0.0031671875,
+              "ls_spline": 0.0272421875,
+              "ideal_lmmse": 0.0004296875,
+              "almmse": 0.011609375,
+              "ls_cp": 0.0119765625,
+              "perfect_csi": 0.0004015625
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "636f8245dbea2e16840b24389aded0aaf4b827d34f41f29e147649c0122a24e4",
+              "information_bits": "15289c51f5e2a59c9b4b62432405613d1aa8f4a3b623e3887e4318fe98501815",
+              "channel_taps": "46e7b47844871a4c5d596bb53a499c4b0edb59528c724dff3858ee097ca2f791",
+              "effective_noise_residual": "b3f59eedf14c691dd82f16f0c0c8f745b159e45ea73ff5a353f6894026c528b0",
+              "received_time_samples": "5d770f4d2cf87228dcb0c2e84d3bca860bfbc1be5785697597f2ca07d02c443a"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 659,
+                "b_only_error": 2016,
+                "both_error": 842,
+                "neither_error": 636483
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 1037,
+                "b_only_error": 511,
+                "both_error": 990,
+                "neither_error": 637462
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 1175,
+                "b_only_error": 16583,
+                "both_error": 852,
+                "neither_error": 621390
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 1883,
+                "b_only_error": 131,
+                "both_error": 144,
+                "neither_error": 637842
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 1154,
+                "b_only_error": 6557,
+                "both_error": 873,
+                "neither_error": 631416
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 1112,
+                "b_only_error": 6750,
+                "both_error": 915,
+                "neither_error": 631223
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 1887,
+                "b_only_error": 117,
+                "both_error": 140,
+                "neither_error": 637856
+              }
+            }
+          }
+        ],
+        "snr_at_target_db": {
+          "dense_fp32": 13.882089182088402,
+          "structured_fp32": 13.024197224661133,
+          "structured_w8a8": 13.337722560133606,
+          "ls_spline": null,
+          "ideal_lmmse": 11.728976686719603,
+          "almmse": 19.529419553831453,
+          "ls_cp": 19.80640196451372,
+          "perfect_csi": 10.976290569980126
+        }
+      },
+      "ETU": {
+        "snrs_db": [
+          0.0,
+          4.0,
+          8.0,
+          12.0,
+          16.0,
+          20.0,
+          24.0,
+          28.0
+        ],
+        "points": [
+          {
+            "snr_db": 0.0,
+            "point_seed": 20260906,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 137925,
+              "structured_fp32": 134165,
+              "structured_w8a8": 137069,
+              "ls_spline": 212294,
+              "ideal_lmmse": 127888,
+              "almmse": 194503,
+              "ls_cp": 195890,
+              "perfect_csi": 94926
+            },
+            "ber": {
+              "dense_fp32": 0.2155078125,
+              "structured_fp32": 0.2096328125,
+              "structured_w8a8": 0.2141703125,
+              "ls_spline": 0.331709375,
+              "ideal_lmmse": 0.199825,
+              "almmse": 0.3039109375,
+              "ls_cp": 0.306078125,
+              "perfect_csi": 0.148321875
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "82188783e9ced19ab8c6de4bd4029d9436804b075314d3a21c986d227d3f560c",
+              "information_bits": "5ca7997d4e65b96b0bb39c87a1175ba2558c928a9955788bfe317f7e1ef5538c",
+              "channel_taps": "4a77cae2bc3aee99cdda55f785aa85392938f4d9191100157e7c2b5fe318a172",
+              "effective_noise_residual": "0bdf22d12d9f884decf78f2d6045c1198fe4161279277bc1617912673dc87f36",
+              "received_time_samples": "557ae38dc7c9fd254f6929ba2184d5cea8510be1f16496436077835f39ef8b5f"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 28629,
+                "b_only_error": 32389,
+                "both_error": 105536,
+                "neither_error": 473446
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 13519,
+                "b_only_error": 10615,
+                "both_error": 123550,
+                "neither_error": 492316
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 57925,
+                "b_only_error": 133150,
+                "both_error": 79144,
+                "neither_error": 369781
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 71614,
+                "b_only_error": 62433,
+                "both_error": 65455,
+                "neither_error": 440498
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 55157,
+                "b_only_error": 112591,
+                "both_error": 81912,
+                "neither_error": 390340
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 55335,
+                "b_only_error": 114156,
+                "both_error": 81734,
+                "neither_error": 388775
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 80571,
+                "b_only_error": 38428,
+                "both_error": 56498,
+                "neither_error": 464503
+              }
+            }
+          },
+          {
+            "snr_db": 4.0,
+            "point_seed": 20260946,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 77915,
+              "structured_fp32": 73678,
+              "structured_w8a8": 76061,
+              "ls_spline": 152617,
+              "ideal_lmmse": 67168,
+              "almmse": 129791,
+              "ls_cp": 131120,
+              "perfect_csi": 49820
+            },
+            "ber": {
+              "dense_fp32": 0.1217421875,
+              "structured_fp32": 0.115121875,
+              "structured_w8a8": 0.1188453125,
+              "ls_spline": 0.2384640625,
+              "ideal_lmmse": 0.10495,
+              "almmse": 0.2027984375,
+              "ls_cp": 0.204875,
+              "perfect_csi": 0.07784375
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "58412363d344dfa497fb5c8d73baba94fffc83c245044150cb867aa38a5d11f0",
+              "information_bits": "04b9ff8e1e13ca05fde6164a0476ab77ae4f44b59cb2f24e61750f60d3373ee7",
+              "channel_taps": "62a176eaacbd21a4bcb65b01b7eab0020c5e8b8dd5cbc0cf648371bd65f42396",
+              "effective_noise_residual": "dfb0b4f3af3018594bf4a82d01c6531b175d5cad42fbf99f771efd8370b20a0a",
+              "received_time_samples": "89e607a4e4502da9f384cd424d0d05d7be79d00344641aa83cfde4540174d1c3"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 17296,
+                "b_only_error": 21533,
+                "both_error": 56382,
+                "neither_error": 544789
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 9106,
+                "b_only_error": 6723,
+                "both_error": 66955,
+                "neither_error": 557216
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 32444,
+                "b_only_error": 109000,
+                "both_error": 43617,
+                "neither_error": 454939
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 43101,
+                "b_only_error": 34208,
+                "both_error": 32960,
+                "neither_error": 529731
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 31309,
+                "b_only_error": 85039,
+                "both_error": 44752,
+                "neither_error": 478900
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 31556,
+                "b_only_error": 86615,
+                "both_error": 44505,
+                "neither_error": 477324
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 46591,
+                "b_only_error": 20350,
+                "both_error": 29470,
+                "neither_error": 543589
+              }
+            }
+          },
+          {
+            "snr_db": 8.0,
+            "point_seed": 20260986,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 38698,
+              "structured_fp32": 36245,
+              "structured_w8a8": 37302,
+              "ls_spline": 100908,
+              "ideal_lmmse": 30425,
+              "almmse": 77344,
+              "ls_cp": 78608,
+              "perfect_csi": 23229
+            },
+            "ber": {
+              "dense_fp32": 0.060465625,
+              "structured_fp32": 0.0566328125,
+              "structured_w8a8": 0.058284375,
+              "ls_spline": 0.15766875,
+              "ideal_lmmse": 0.0475390625,
+              "almmse": 0.12085,
+              "ls_cp": 0.122825,
+              "perfect_csi": 0.0362953125
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "6b35c70bdf318f8eac200beee3cbc406dedc7a1bf8be8a7ef3de40717ee83947",
+              "information_bits": "16334d0378d3fcf1b0e4fbcfff12598371810cbf54c2832af033c016b36fcb6e",
+              "channel_taps": "5c62bf4e670890f5cfd8d8c816395b35a8e874532c2a9a1f90ec3c506549f99d",
+              "effective_noise_residual": "16e5b2c417a7c8bafe3bd526290ef2fcb290c47e98ff6fba027ce8b8b5357705",
+              "received_time_samples": "abbf13385c375e1bb00acbe608b9f311eb2762cba54fb05086c4bd269fc9dd50"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 9570,
+                "b_only_error": 12023,
+                "both_error": 26675,
+                "neither_error": 591732
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 5300,
+                "b_only_error": 4243,
+                "both_error": 32002,
+                "neither_error": 598455
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 16103,
+                "b_only_error": 79709,
+                "both_error": 21199,
+                "neither_error": 522989
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 22699,
+                "b_only_error": 15822,
+                "both_error": 14603,
+                "neither_error": 586876
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 15599,
+                "b_only_error": 55641,
+                "both_error": 21703,
+                "neither_error": 547057
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 15623,
+                "b_only_error": 56929,
+                "both_error": 21679,
+                "neither_error": 545769
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 23825,
+                "b_only_error": 9752,
+                "both_error": 13477,
+                "neither_error": 592946
+              }
+            }
+          },
+          {
+            "snr_db": 12.0,
+            "point_seed": 20261026,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 20690,
+              "structured_fp32": 18579,
+              "structured_w8a8": 19030,
+              "ls_spline": 72388,
+              "ideal_lmmse": 14080,
+              "almmse": 50049,
+              "ls_cp": 50923,
+              "perfect_csi": 10377
+            },
+            "ber": {
+              "dense_fp32": 0.032328125,
+              "structured_fp32": 0.0290296875,
+              "structured_w8a8": 0.029734375,
+              "ls_spline": 0.11310625,
+              "ideal_lmmse": 0.022,
+              "almmse": 0.0782015625,
+              "ls_cp": 0.0795671875,
+              "perfect_csi": 0.0162140625
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "ceac3cedf444abb546fe29e8ef5e941f4879cf66b68f443d63bc41ccd107bc8c",
+              "information_bits": "f7e448f00c5ee575af944f76cfd59815b1cf73dfef87be0fc2a599c78f983149",
+              "channel_taps": "0e365b00d9a218372f357c7777fb2fbf243468987791567e70afde666d3b7fa5",
+              "effective_noise_residual": "6071fe87611db53e45ec201332c0fdb58b95a7e8ad2511fbac0f701e66af0d86",
+              "received_time_samples": "15ddb16dc872b8b7f45bdff21a6533bfb04c0ba26fb3a7534dc36cb298bab8bf"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 5617,
+                "b_only_error": 7728,
+                "both_error": 12962,
+                "neither_error": 613693
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 3322,
+                "b_only_error": 2871,
+                "both_error": 15708,
+                "neither_error": 618099
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 8007,
+                "b_only_error": 61365,
+                "both_error": 11023,
+                "neither_error": 559605
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 12757,
+                "b_only_error": 7807,
+                "both_error": 6273,
+                "neither_error": 613163
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 7711,
+                "b_only_error": 38730,
+                "both_error": 11319,
+                "neither_error": 582240
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 7770,
+                "b_only_error": 39663,
+                "both_error": 11260,
+                "neither_error": 581307
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 13250,
+                "b_only_error": 4597,
+                "both_error": 5780,
+                "neither_error": 616373
+              }
+            }
+          },
+          {
+            "snr_db": 16.0,
+            "point_seed": 20261066,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 10669,
+              "structured_fp32": 9079,
+              "structured_w8a8": 9251,
+              "ls_spline": 52265,
+              "ideal_lmmse": 5933,
+              "almmse": 32070,
+              "ls_cp": 32661,
+              "perfect_csi": 4118
+            },
+            "ber": {
+              "dense_fp32": 0.0166703125,
+              "structured_fp32": 0.0141859375,
+              "structured_w8a8": 0.0144546875,
+              "ls_spline": 0.0816640625,
+              "ideal_lmmse": 0.0092703125,
+              "almmse": 0.050109375,
+              "ls_cp": 0.0510328125,
+              "perfect_csi": 0.006434375
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "4a9dadd40f7a32a02b62c7b7725bd9ff5bb8fade2e4b28e25ccfb906293c6cc5",
+              "information_bits": "eb5cc118ef8a31eff492b4e04c1a2806b213d7a1cc556d8a9ec602bc4e4f0d59",
+              "channel_taps": "054d517036b8c1da4f5437093a6d53bf21d890e42f39fc7495874db8a48ab973",
+              "effective_noise_residual": "236f4e7d56fb2b66314a0c9ce261b9f3ebf3130fb25e0aef9e27b7f6bac2adc1",
+              "received_time_samples": "01ab93b364e5d85097ccb80e1981522d755ead065b4d21b71ae97336a23a9df3"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 3267,
+                "b_only_error": 4857,
+                "both_error": 5812,
+                "neither_error": 626064
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 2131,
+                "b_only_error": 1959,
+                "both_error": 7120,
+                "neither_error": 628790
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 4065,
+                "b_only_error": 47079,
+                "both_error": 5186,
+                "neither_error": 583670
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 6963,
+                "b_only_error": 3645,
+                "both_error": 2288,
+                "neither_error": 627104
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 3874,
+                "b_only_error": 26693,
+                "both_error": 5377,
+                "neither_error": 604056
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 3914,
+                "b_only_error": 27324,
+                "both_error": 5337,
+                "neither_error": 603425
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 7105,
+                "b_only_error": 1972,
+                "both_error": 2146,
+                "neither_error": 628777
+              }
+            }
+          },
+          {
+            "snr_db": 20.0,
+            "point_seed": 20261106,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 6741,
+              "structured_fp32": 5198,
+              "structured_w8a8": 5366,
+              "ls_spline": 45617,
+              "ideal_lmmse": 2301,
+              "almmse": 25265,
+              "ls_cp": 25675,
+              "perfect_csi": 1470
+            },
+            "ber": {
+              "dense_fp32": 0.0105328125,
+              "structured_fp32": 0.008121875,
+              "structured_w8a8": 0.008384375,
+              "ls_spline": 0.0712765625,
+              "ideal_lmmse": 0.0035953125,
+              "almmse": 0.0394765625,
+              "ls_cp": 0.0401171875,
+              "perfect_csi": 0.002296875
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "290c88dc0676da10eb453360b31990459d1aaae6f2c761bcbbf978a73b67ab29",
+              "information_bits": "072fa097d1c0490df0a60f43aed82bdab3bd77f91fd6f2757b108b4da8333d6a",
+              "channel_taps": "e1a7ef2b79ee4cb714386d5944e5f90efdf24d5e1f16cd7f4bfa2552b76b3218",
+              "effective_noise_residual": "c63be30826b0b17fd3e2fd7287495503c1b16370df62c385371c0810c83c1da3",
+              "received_time_samples": "b15a5a2dae71fc302a5396db2fe0ecfea09676a336cfab516361e8a099b5ca3c"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 2058,
+                "b_only_error": 3601,
+                "both_error": 3140,
+                "neither_error": 631201
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 1571,
+                "b_only_error": 1403,
+                "both_error": 3795,
+                "neither_error": 633231
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 2343,
+                "b_only_error": 42594,
+                "both_error": 3023,
+                "neither_error": 592040
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 4536,
+                "b_only_error": 1471,
+                "both_error": 830,
+                "neither_error": 633163
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 2123,
+                "b_only_error": 22022,
+                "both_error": 3243,
+                "neither_error": 612612
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 2162,
+                "b_only_error": 22471,
+                "both_error": 3204,
+                "neither_error": 612163
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 4630,
+                "b_only_error": 734,
+                "both_error": 736,
+                "neither_error": 633900
+              }
+            }
+          },
+          {
+            "snr_db": 24.0,
+            "point_seed": 20261146,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 6039,
+              "structured_fp32": 4297,
+              "structured_w8a8": 4501,
+              "ls_spline": 42504,
+              "ideal_lmmse": 1019,
+              "almmse": 22746,
+              "ls_cp": 23141,
+              "perfect_csi": 680
+            },
+            "ber": {
+              "dense_fp32": 0.0094359375,
+              "structured_fp32": 0.0067140625,
+              "structured_w8a8": 0.0070328125,
+              "ls_spline": 0.0664125,
+              "ideal_lmmse": 0.0015921875,
+              "almmse": 0.035540625,
+              "ls_cp": 0.0361578125,
+              "perfect_csi": 0.0010625
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "19ce2105854c2dea9d28713ea8b959fc648ab7566da5c8c75b98770ffa38799d",
+              "information_bits": "7b617d4bbe33f777d269fe7eb9d98f865ea56cc2487eac215dbf9d523bc48338",
+              "channel_taps": "d186d661ec7cc372d4aaae4faee72880d93358b3b8bde9b5e19a939ba12818f1",
+              "effective_noise_residual": "8fb1840b0133c6df70da77c6f287779a5654b300472c4e27b3301de7ae5fc1e1",
+              "received_time_samples": "d81cdd102262d02ffed09bbf9e505d2fd9c26fcb523341d0583538084020d296"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 1768,
+                "b_only_error": 3510,
+                "both_error": 2529,
+                "neither_error": 632193
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 1446,
+                "b_only_error": 1242,
+                "both_error": 3055,
+                "neither_error": 634257
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 1946,
+                "b_only_error": 39949,
+                "both_error": 2555,
+                "neither_error": 595550
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 4153,
+                "b_only_error": 671,
+                "both_error": 348,
+                "neither_error": 634828
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 1762,
+                "b_only_error": 20007,
+                "both_error": 2739,
+                "neither_error": 615492
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 1775,
+                "b_only_error": 20415,
+                "both_error": 2726,
+                "neither_error": 615084
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 4190,
+                "b_only_error": 369,
+                "both_error": 311,
+                "neither_error": 635130
+              }
+            }
+          },
+          {
+            "snr_db": 28.0,
+            "point_seed": 20261186,
+            "slots": 2000,
+            "bits": 640000,
+            "errors": {
+              "dense_fp32": 5089,
+              "structured_fp32": 3440,
+              "structured_w8a8": 3746,
+              "ls_spline": 41074,
+              "ideal_lmmse": 1596,
+              "almmse": 20949,
+              "ls_cp": 21259,
+              "perfect_csi": 279
+            },
+            "ber": {
+              "dense_fp32": 0.0079515625,
+              "structured_fp32": 0.005375,
+              "structured_w8a8": 0.005853125,
+              "ls_spline": 0.064178125,
+              "ideal_lmmse": 0.00249375,
+              "almmse": 0.0327328125,
+              "ls_cp": 0.0332171875,
+              "perfect_csi": 0.0004359375
+            },
+            "stimulus_sha256": {
+              "transmitted_time_samples": "636f8245dbea2e16840b24389aded0aaf4b827d34f41f29e147649c0122a24e4",
+              "information_bits": "15289c51f5e2a59c9b4b62432405613d1aa8f4a3b623e3887e4318fe98501815",
+              "channel_taps": "41fe48a85ebf95249efe732a253e16ad8951d535ff7d1694e82efbc98870b53c",
+              "effective_noise_residual": "6e442db1e2d4f9210a76e5d891888bcf086ac095a3813873cb00062b36a9937e",
+              "received_time_samples": "47e5b1a31dbe94a96a622351698c53628404756315e381b71cdd77641870e5a3"
+            },
+            "paired_error_counts": {
+              "structured_fp32_vs_dense_fp32": {
+                "a_only_error": 1520,
+                "b_only_error": 3169,
+                "both_error": 1920,
+                "neither_error": 633391
+              },
+              "structured_w8a8_vs_structured_fp32": {
+                "a_only_error": 1395,
+                "b_only_error": 1089,
+                "both_error": 2351,
+                "neither_error": 635165
+              },
+              "structured_w8a8_vs_ls_spline": {
+                "a_only_error": 1718,
+                "b_only_error": 39046,
+                "both_error": 2028,
+                "neither_error": 597208
+              },
+              "structured_w8a8_vs_ideal_lmmse": {
+                "a_only_error": 3599,
+                "b_only_error": 1449,
+                "both_error": 147,
+                "neither_error": 634805
+              },
+              "structured_w8a8_vs_almmse": {
+                "a_only_error": 1559,
+                "b_only_error": 18762,
+                "both_error": 2187,
+                "neither_error": 617492
+              },
+              "structured_w8a8_vs_ls_cp": {
+                "a_only_error": 1576,
+                "b_only_error": 19089,
+                "both_error": 2170,
+                "neither_error": 617165
+              },
+              "structured_w8a8_vs_perfect_csi": {
+                "a_only_error": 3632,
+                "b_only_error": 165,
+                "both_error": 114,
+                "neither_error": 636089
+              }
+            }
+          }
+        ],
+        "snr_at_target_db": {
+          "dense_fp32": 14.900192725754096,
+          "structured_fp32": 14.081292919125202,
+          "structured_w8a8": 14.199249923413156,
+          "ls_spline": null,
+          "ideal_lmmse": 12.441135767751463,
+          "almmse": null,
+          "ls_cp": null,
+          "perfect_csi": 10.958298180554099
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "conditions": 72,
+  "variants": 16,
+  "unique_slots": 144000,
+  "unique_bits": 76800000,
+  "all_slot_baseline_original_agreement": "max absolute difference 0 for both matrix and FFT on every simulated slot",
+  "paired_counts_and_grid_summaries_recomputed": true,
+  "source_and_original_checkpoint_hashes_unchanged": true,
+  "all_received_hashes_and_rng_namespaces_unique": true,
+  "manifest_sha256": "8729036e158c6decaf5f9dee28b11c5a74a3841bef057c7ba160187fb23f4728",
+  "summary_sha256": "df0731d62b6a815a80a8259611625c325f08e19fee105c8af602b53c598216e7",
+  "auditor_sha256": "f778c081ba921bd3e6643e31fa0d5f0a6c4c5727f8af43450d6ed45a27a47e10",
+  "scope": "Descriptive paired fixed-checkpoint follow-up; finite-bit candidates are untrained and unsynthesized."
+}

@@ -1,0 +1,70 @@
+{
+  "status": "STATIC_OPERATOR_SOURCE_SANITY_NOT_COMPILED_SYSTEM_VALIDATION",
+  "x": [
+    -20.0,
+    -6.0,
+    -3.0,
+    0.0,
+    3.0,
+    6.0,
+    20.0
+  ],
+  "pytorch_pwla": [
+    -1.2677165269851685,
+    -1.0472440719604492,
+    -1.0,
+    0.0,
+    1.0,
+    1.0472440719604492,
+    1.2677165269851685
+  ],
+  "exact_tanh": [
+    -1.0,
+    -0.9999877214431763,
+    -0.9950547814369202,
+    0.0,
+    0.9950547814369202,
+    0.9999877214431763,
+    1.0
+  ],
+  "exported_cpp_formula_evaluated_in_numpy": [
+    -1.2677165269851685,
+    -1.0472440719604492,
+    -1.0,
+    0.0,
+    1.0,
+    1.0472440719604492,
+    1.2677165269851685
+  ],
+  "numpy_formula_max_abs_diff_vs_pytorch": 0.0,
+  "outside_pwla_domain": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true
+  ],
+  "outside_tanh_output_range": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true
+  ],
+  "actual_behavior": "Only the segment index is clamped. Original x is used in the outer line, so PWLA extrapolates outside [-3,3] and can exceed [-1,1].",
+  "documentation_discrepancy": "quant.py PWLATanh docstring says out-of-range saturation, but the implementation and revT C++ both extrapolate.",
+  "source_paths": [
+    "E:\\biyelunwen\\e5_hls\\experiments\\pdpfix_opt_20260928\\receiver_opt_rev_t.cpp",
+    "E:\\biyelunwen\\e5_hls\\experiments\\pdpfix_opt_20260928\\weights.h"
+  ],
+  "source_sha256": {
+    "E:\\biyelunwen\\e5_hls\\experiments\\pdpfix_opt_20260928\\receiver_opt_rev_t.cpp": "767be325c7cf28f4bb655120fe3aa26fcc2ff8652bf236b7ed9408b539ddb0f6",
+    "E:\\biyelunwen\\e5_hls\\experiments\\pdpfix_opt_20260928\\weights.h": "ee05ffa702aa60e41d95546c25884095103565e6c25ede49b73159fc40e603fe",
+    "E:\\biyelunwen\\dccn\\quant.py": "83d132738abc82bdb472ef66b0f08bc0aa50c93674c20bccca91d1a5b5e8fde3"
+  },
+  "intervention": "None. Shared Python/C++ operators, weights and bitstream are unchanged."
+}

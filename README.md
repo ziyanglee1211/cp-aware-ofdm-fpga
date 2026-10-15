@@ -1,6 +1,12 @@
 # CP-aware neural OFDM receiver: reproducibility package
 
-Local release candidate `v1.0.0`, prepared 14 October 2026, for the author-edited manuscript **Structure- and Sensitivity-Guided FPGA Mapping of a CP-Aware Complex Neural OFDM Receiver** (target: Integration, the VLSI Journal). This is not a claim of acceptance or publication. No article DOI or public repository URL has been assigned in this local package.
+Release `v1.0.0`, prepared on 14 October 2026, for the author-edited manuscript *Structure- and Sensitivity-Guided FPGA Mapping of a CP-Aware Complex Neural OFDM Receiver* (target journal: *Integration, the VLSI Journal*).
+
+The manuscript has not yet been accepted or published, and no article DOI has been assigned.
+
+- **Source code:** https://github.com/ziyanglee1211/cp-aware-ofdm-fpga
+- **Complete reproducibility archive:** https://doi.org/10.5281/zenodo.23356142
+- **Archive version:** 1.0.0
 
 Authors, in manuscript order: Ziyang Li, Youyao Liu, Lele Wang. The manuscript's corresponding author is Youyao Liu. The manuscript/SI SHA256 bindings are recorded in `provenance/manuscript_binding.json`; the manuscripts themselves and private submission documents are not distributed here.
 
@@ -56,4 +62,8 @@ This exports the retained native numerical objects for Figures 5–10 into a **n
 
 Original code/hardware source is provided under MIT; original research data and model/figure artifacts are under CC BY 4.0 as scoped in `LICENSE-DATA.md`. Third-party PDP matrices retain their upstream MIT notice. Read `THIRD_PARTY_NOTICES.md` and `docs/PROVENANCE.md`. Public permission does not transfer ownership of third-party material.
 
-Do not cite a fabricated DOI. Once a real Zenodo record exists, add its URL/DOI and the GitHub URL in a new documented metadata change, then reference the precise archived version used for the manuscript.
+The version-specific reproducibility dataset is publicly available at https://doi.org/10.5281/zenodo.23356142. Cite this DOI when referencing the archived experimental evidence. The manuscript's article DOI will be added when available.
+
+The complete reproducibility archive is published on Zenodo under DOI [10.5281/zenodo.23356142](https://doi.org/10.5281/zenodo.23356142).
+
+Due to upload connectivity constraints, the archive is distributed as numbered ZIP parts, together with `parts.json` and `restore_zenodo_full.py`. Download all parts and the accompanying reconstruction files, restore the original ZIP, and verify its integrity before extracting the archive and running the recorded-data audits.

@@ -1,5 +1,7 @@
 cff-version: 1.2.0
-message: "message: "For archived experimental data, please cite https://doi.org/10.5281/zenodo.23356142. The associated journal article has not yet been published.""
+
+message: "For archived experimental data, please cite https://doi.org/10.5281/zenodo.23356142. The associated journal article has not yet been published."
+  
 type: software
 title: "Reproducibility package: Structure- and Sensitivity-Guided FPGA Mapping of a CP-Aware Complex Neural OFDM Receiver"
 version: 1.0.0

@@ -17,7 +17,7 @@ Authors, in manuscript order: Ziyang Li, Youyao Liu, Lele Wang. The manuscript's
 - MATLAB source inputs and editable native FIG objects for Figures 5–10.
 - Authors' local-A12 C/HLS source, coefficient/stimulus headers, wrapper, constraints, ROMs and archived machine-readable implementation evidence. Proprietary generated IP and tool installations are excluded.
 
-The **complete Zenodo archive** additionally contains original checkpoints, formal per-slot NPZ outcomes, component seed records and the selected final training records. The source tree in that archive is the same as this GitHub tree. Obtain that archive and extract it into a new directory to run all recorded-data audits and checkpoint tests. Do not infer completeness from cloning GitHub alone.
+The **complete Zenodo archive** additionally contains original checkpoints, formal per-slot NPZ outcomes, component seed records and the selected final training records. The Zenodo archive contains the frozen source snapshot used for the reproducibility release. The GitHub repository may receive subsequent documentation and metadata updates. Obtain that archive and extract it into a new directory to run all recorded-data audits and checkpoint tests. Do not infer completeness from cloning GitHub alone.
 
 ## Quick start: integrity and recorded-data audit
 
